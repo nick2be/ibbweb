@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Indicium By Bounty ApS - IT Development & Security Services" %}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="animate-on-scroll">{% trans "Driving Innovation and Security in IT for Over 9 Years" %}</h1>
+                <p class="lead mb-4 animate-on-scroll">{% trans "Professional IT development and security services for banking, insurance, logistics, and other critical sectors." %}</p>
+                <div class="d-flex gap-3 animate-on-scroll">
+                    <a href="{% url 'services:list' %}" class="btn btn-primary btn-lg">{% trans "Our Services" %}</a>
+                    <a href="{% url 'contact:contact' %}" class="btn btn-outline-primary btn-lg">{% trans "Contact Us" %}</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'images/hero-image.png' %}" alt="{% trans 'IT Services' %}" class="img-fluid rounded shadow-lg animate-on-scroll">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">{% trans "Our Services" %}</h2>
+        <div class="row g-4">
+            {% for service in services %}
+            <div class="col-md-4 animate-on-scroll">
+                <div class="service-card h-100">
+                    {% if service.icon %}
+                        <img src="{{ service.icon.url }}" alt="{{ service.name }}" class="mb-3" width="48">
+                    {% else %}
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                    {% endif %}
+                    <h3>{{ service.name }}</h3>
+                    <p>{{ service.short_description }}</p>
+                    <a href="{% url 'services:detail' service.slug %}" class="btn btn-outline-primary">{% trans "Learn More" %}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Industries Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">{% trans "Industries We Serve" %}</h2>
+        <div class="row g-4">
+            <div class="col-md-3 animate-on-scroll">
+                <div class="text-center">
+                    <img src="{% static 'images/banking.png' %}" alt="{% trans 'Banking' %}" class="mb-3" width="64">
+                    <h4>{% trans "Banking" %}</h4>
+                </div>
+            </div>
+            <div class="col-md-3 animate-on-scroll">
+                <div class="text-center">
+                    <img src="{% static 'images/insurance.png' %}" alt="{% trans 'Insurance' %}" class="mb-3" width="64">
+                    <h4>{% trans "Insurance" %}</h4>
+                </div>
+            </div>
+            <div class="col-md-3 animate-on-scroll">
+                <div class="text-center">
+                    <img src="{% static 'images/logistics.png' %}" alt="{% trans 'Logistics' %}" class="mb-3" width="64">
+                    <h4>{% trans "Logistics" %}</h4>
+                </div>
+            </div>
+            <div class="col-md-3 animate-on-scroll">
+                <div class="text-center">
+                    <img src="{% static 'images/enterprise.png' %}" alt="{% trans 'Enterprise' %}" class="mb-3" width="64">
+                    <h4>{% trans "Enterprise" %}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">{% trans "Latest News" %}</h2>
+        <div class="row">
+            {% for article in latest_news %}
+            <div class="col-md-6 animate-on-scroll">
+                <div class="card h-100">
+                    {% if article.image %}
+                    <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h3 class="card-title">{{ article.title }}</h3>
+                        <p class="text-muted">{{ article.created_at|date:"F j, Y" }}</p>
+                        <p class="card-text">{{ article.excerpt }}</p>
+                        <a href="{% url 'news:detail' article.slug %}" class="btn btn-outline-primary">{% trans "Read More" %}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">{% trans "Ready to Transform Your IT Infrastructure?" %}</h2>
+        <p class="lead mb-4">{% trans "Let's discuss how we can help your business thrive with our professional IT services." %}</p>
+        <a href="{% url 'contact:contact' %}" class="btn btn-light btn-lg">{% trans "Get in Touch" %}</a>
+    </div>
+</section>
+{% endblock %} 

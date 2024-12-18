@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Privacy Policy" %} - {% trans "Indicium By Bounty ApS" %}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="mb-4">{% trans "Privacy Policy" %}</h1>
+                <p class="lead mb-5">{% trans "At Indicium By Bounty ApS, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information." %}</p>
+
+                <div class="mb-5">
+                    <h2>{% trans "Information We Collect" %}</h2>
+                    <p>{% trans "We collect information that you provide directly to us, including:" %}</p>
+                    <ul>
+                        <li>{% trans "Name and contact information" %}</li>
+                        <li>{% trans "Company details" %}</li>
+                        <li>{% trans "Email correspondence" %}</li>
+                        <li>{% trans "Information provided through our contact forms" %}</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h2>{% trans "How We Use Your Information" %}</h2>
+                    <p>{% trans "We use the information we collect to:" %}</p>
+                    <ul>
+                        <li>{% trans "Respond to your inquiries" %}</li>
+                        <li>{% trans "Provide our services" %}</li>
+                        <li>{% trans "Send newsletters and updates (with your consent)" %}</li>
+                        <li>{% trans "Improve our website and services" %}</li>
+                        <li>{% trans "Comply with legal obligations" %}</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h2>{% trans "Data Protection" %}</h2>
+                    <p>{% trans "We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful processing, accidental loss, destruction, or damage." %}</p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>{% trans "Your Rights" %}</h2>
+                    <p>{% trans "Under GDPR, you have the following rights:" %}</p>
+                    <ul>
+                        <li>{% trans "Right to access your personal data" %}</li>
+                        <li>{% trans "Right to rectification" %}</li>
+                        <li>{% trans "Right to erasure ('right to be forgotten')" %}</li>
+                        <li>{% trans "Right to restrict processing" %}</li>
+                        <li>{% trans "Right to data portability" %}</li>
+                        <li>{% trans "Right to object" %}</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h2>{% trans "Cookies" %}</h2>
+                    <p>{% trans "Our website uses cookies to enhance your browsing experience. You can control cookie settings through your browser preferences." %}</p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>{% trans "Third-Party Services" %}</h2>
+                    <p>{% trans "We may use third-party services that collect, monitor, and analyze data. These services have their own privacy policies." %}</p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>{% trans "Changes to This Policy" %}</h2>
+                    <p>{% trans "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page." %}</p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>{% trans "Contact Us" %}</h2>
+                    <p>{% trans "If you have any questions about this privacy policy, please contact us at:" %}</p>
+                    <ul class="list-unstyled">
+                        <li>{% trans "Email" %}: privacy@indiciumbybounty.com</li>
+                        <li>{% trans "Phone" %}: +45 XX XX XX XX</li>
+                        <li>{% trans "Address" %}: {% trans "Copenhagen, Denmark" %}</li>
+                    </ul>
+                </div>
+
+                <div class="text-muted">
+                    <p>{% trans "Last updated" %}: {% now "F j, Y" %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

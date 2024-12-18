@@ -1,0 +1,31 @@
+You are tasked with building a professional, responsive, and secure company website for Indicium By Bounty ApS with detailed specifications for Project Overview, Technical Requirements, Information Architecture & Site Structure, Page-by-Page Specifications, Visual Design & Branding, and Content Management.
+---
+s
+---
+continue
+---
+when running the server I get this error loading the homepage: [Template error: Invalid block tag on line 10: 'static'. Did you forget to register or load this tag?]
+---
+now i get this error whne loading the homepage: [Reverse for 'home' not found. 'home' is not a valid view function or pattern name.]
+---
+make the logo 20% larger
+---
+please change code to so the logo banking.svg is banking.png
+---
+Change the following images : 
+logistics.svg to logistics.png
+insurance.svg to insurance.png
+enterprise.svg to enterprise.png
+---
+what should the size of the Hero image be?
+---
+make a robots.tx for the site
+---
+add the robots.txt as a URL to the site so robots can see it
+---
+can you make a danish translation of the whole site so if a browser with danis language get served the danis site version.
+---
+make a .gitignore file and add /.venv and /venv
+---
+can you change the repository this project will push to? It has to be https://github.com/nick2be/ibbweb.git
+---

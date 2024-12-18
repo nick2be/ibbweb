@@ -1,0 +1,168 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% trans 'Indicium By Bounty ApS - Professional IT Development & Security Services' %}">
+    <title>{% block title %}{% trans 'Indicium By Bounty ApS' %}{% endblock %}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'pages:home' %}">
+                <img src="{% static 'images/logo.png' %}" alt="{% trans 'Indicium By Bounty ApS Logo' %}" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'pages:home' %}">{% trans 'Home' %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services:list' %}">{% trans 'Services' %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'news:list' %}">{% trans 'News' %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'pages:about' %}">{% trans 'About Us' %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact:contact' %}">{% trans 'Contact' %}</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+                            {% get_current_language as CURRENT_LANGUAGE %}
+                            {% if CURRENT_LANGUAGE == 'da' %}
+                                Dansk
+                            {% else %}
+                                English
+                            {% endif %}
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <form action="{% url 'set_language' %}" method="post" class="language-form">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <input type="hidden" name="language" value="en">
+                                    <button type="submit" class="dropdown-item {% if CURRENT_LANGUAGE == 'en' %}active{% endif %}">
+                                        English
+                                    </button>
+                                </form>
+                            </li>
+                            <li>
+                                <form action="{% url 'set_language' %}" method="post" class="language-form">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <input type="hidden" name="language" value="da">
+                                    <button type="submit" class="dropdown-item {% if CURRENT_LANGUAGE == 'da' %}active{% endif %}">
+                                        Dansk
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-shrink-0 mt-5 pt-4">
+        {% if messages %}
+        <div class="container mt-3">
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>{% trans 'Indicium By Bounty ApS' %}</h5>
+                    <p>{% trans 'Driving Innovation and Security in IT for Over 9 Years' %}</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>{% trans 'Quick Links' %}</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'pages:home' %}">{% trans 'Home' %}</a></li>
+                        <li><a href="{% url 'services:list' %}">{% trans 'Services' %}</a></li>
+                        <li><a href="{% url 'news:list' %}">{% trans 'News' %}</a></li>
+                        <li><a href="{% url 'pages:about' %}">{% trans 'About Us' %}</a></li>
+                        <li><a href="{% url 'contact:contact' %}">{% trans 'Contact' %}</a></li>
+                        <li><a href="{% url 'pages:privacy' %}">{% trans 'Privacy Policy' %}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>{% trans 'Contact Us' %}</h5>
+                    <ul class="list-unstyled">
+                        <li>{% trans 'Email' %}: contact@indicium-bb.com</li>
+                        <li>{% trans 'Phone' %}: +45 XX XX XX XX</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; {% now "Y" %} {% trans 'Indicium By Bounty ApS. All rights reserved.' %}</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageForms = document.querySelectorAll('.language-form');
+            languageForms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const formData = new FormData(form);
+                    fetch('{% url "set_language" %}', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'X-CSRFToken': formData.get('csrfmiddlewaretoken')
+                        },
+                        credentials: 'same-origin'
+                    }).then(response => {
+                        if (response.ok) {
+                            const language = formData.get('language');
+                            const currentPath = window.location.pathname;
+                            const newPath = language === 'en' ? 
+                                currentPath.replace(/^\/da/, '/en') : 
+                                currentPath.replace(/^\/en/, '/da');
+                            window.location.pathname = newPath || `/${language}${currentPath}`;
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html> 

@@ -1,0 +1,20 @@
+# robots.txt for Indicium By Bounty ApS
+
+User-agent: *
+Allow: /
+Allow: /services/
+Allow: /news/
+Allow: /about/
+Allow: /contact/
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /media/private/
+Disallow: /static/admin/
+
+# Crawl-delay to prevent server overload
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.indiciumbybounty.com/sitemap.xml 
