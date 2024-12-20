@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from services.models import Service
 from news.models import Article
+from django.utils.translation import activate, gettext as _
+from django.http import HttpResponse
 
 def home(request):
     services = Service.objects.all()[:6]
@@ -20,4 +22,8 @@ def about(request):
     return render(request, 'pages/about.html', context)
 
 def privacy(request):
-    return render(request, 'pages/privacy.html', {'title': 'Privacy Policy'}) 
+    return render(request, 'pages/privacy.html', {'title': 'Privacy Policy'})
+
+def test_danish(request):
+    activate('da')
+    return HttpResponse(_('Home'), content_type='text/plain') 

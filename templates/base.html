@@ -142,6 +142,7 @@
                 form.addEventListener('submit', function(e) {
                     e.preventDefault();
                     const formData = new FormData(form);
+                    const nextUrl = formData.get('next');
                     fetch('{% url "set_language" %}', {
                         method: 'POST',
                         body: formData,
@@ -152,11 +153,14 @@
                     }).then(response => {
                         if (response.ok) {
                             const language = formData.get('language');
-                            const currentPath = window.location.pathname;
-                            const newPath = language === 'en' ? 
-                                currentPath.replace(/^\/da/, '/en') : 
-                                currentPath.replace(/^\/en/, '/da');
-                            window.location.pathname = newPath || `/${language}${currentPath}`;
+                            // Remove any existing language prefix
+                            let path = nextUrl.replace(/^\/(en|da)/, '');
+                            // If the path is empty, set it to /
+                            if (!path) {
+                                path = '/';
+                            }
+                            // Add the new language prefix and redirect
+                            window.location.href = `/${language}${path}`;
                         }
                     });
                 });
