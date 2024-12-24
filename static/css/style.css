@@ -3,7 +3,7 @@
     --primary-color: #0056b3;
     --secondary-color: #6c757d;
     --accent-color: #17a2b8;
-    --light-gray: #f8f9fa;
+    --light-gray: #E0E7EA;
     --dark-gray: #343a40;
 }
 
@@ -45,6 +45,7 @@ a:hover {
 /* Navigation */
 .navbar {
     padding: 1rem 0;
+    background-color: #E0E7EA !important;
 }
 
 .navbar-brand img {

@@ -1,0 +1,59 @@
+# Danish translations for services
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 13:00+0100\n"
+"PO-Revision-Date: 2024-12-20 13:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: Danish\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Full Stack Development"
+msgstr "Full Stack Udvikling"
+
+msgid "Application Integrations"
+msgstr "Applikationsintegrationer"
+
+msgid "Jira Development & Administration"
+msgstr "Jira Udvikling & Administration"
+
+msgid "Data Visualization and Business Intelligence"
+msgstr "Datavisualisering og Business Intelligence"
+
+msgid "IT Infrastructure Build and Development"
+msgstr "IT-infrastruktur Opbygning og Udvikling"
+
+msgid "From sleek user interfaces to powerful back-end systems, our Full Stack development services deliver seamless, end-to-end solutions tailored to your business needs."
+msgstr "Fra elegante brugergrænseflader til kraftfulde backend-systemer leverer vores Full Stack-udviklingstjenester problemfrie, komplette løsninger skræddersyet til dine forretningsbehov."
+
+msgid "Streamline your workflows and boost efficiency with our Application Integration services, connecting your systems for a seamless, unified experience."
+msgstr "Strømlin dine arbejdsgange og øg effektiviteten med vores applikationsintegrationstjenester, der forbinder dine systemer til en problemfri, samlet oplevelse."
+
+msgid "Optimize your team's productivity with our Jira Development & Administration services—customized workflows, seamless integrations, and expert management tailored to your needs."
+msgstr "Optimer dit teams produktivitet med vores Jira Udvikling & Administration tjenester—tilpassede arbejdsgange, problemfri integrationer og ekspert administration skræddersyet til dine behov."
+
+msgid "Transform your data into actionable insights with our Data Visualization and Business Intelligence solutions—empowering smarter decisions through clear, impactful visuals."
+msgstr "Transformer dine data til handlingsorienterede indsigter med vores Datavisualisering og Business Intelligence-løsninger—der giver mulighed for smartere beslutninger gennem klare, effektfulde visualiseringer."
+
+msgid "Build a robust foundation for your business with our IT Infrastructure Build and Development services—scalable, secure, and tailored to drive your success."
+msgstr "Byg et robust fundament for din virksomhed med vores IT-infrastruktur Opbygning og Udviklingstjenester—skalerbar, sikker og skræddersyet til at drive din succes."
+
+msgid "Our Services"
+msgstr "Vores Tjenester"
+
+msgid "Learn More"
+msgstr "Læs Mere"
+
+msgid "Need a Custom Solution?"
+msgstr "Har Du Brug for en Tilpasset Løsning?"
+
+msgid "Contact us to discuss how we can help with your specific requirements."
+msgstr "Kontakt os for at diskutere, hvordan vi kan hjælpe med dine specifikke krav."
+
+msgid "Get in Touch"
+msgstr "Kontakt Os" 

@@ -29,3 +29,19 @@ make a .gitignore file and add /.venv and /venv
 ---
 can you change the repository this project will push to? It has to be https://github.com/nick2be/ibbweb.git
 ---
+- Add new services to the service page with specific descriptions and icons
+- Update translation files for the new service content
+- Are you about done?
+- Remember the root dir of the project is in c:\dev\ibbweb\ibbweb
+---
+The About us page is still in english
+The contact for has a few english words - Message and send message - hsould be danis "Besked" and "Send besked.
+The news page has a few sections that are still english - Browse by category and Popular tags.
+On the services page the herosection is danish - the service cards are in english - this goes for the servicecards on the homepage aswell.
+---
+Don't we need to compile the translation?
+---
+yes - pleace check the service cards.
+---
+the translation is now working. Great. Place upda the instructions.txt and the summary.txt
+---

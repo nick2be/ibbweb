@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.utils import timezone
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
+from django.utils.translation import gettext as _
 from .models import Contact, Newsletter
 from .forms import ContactForm, NewsletterForm
 
@@ -11,14 +12,14 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             contact = form.save()
-            messages.success(request, 'Thank you for your message. We will get back to you soon.')
+            messages.success(request, _('Thank you for your message. We will get back to you soon.'))
             return redirect('contact:contact')
     else:
         form = ContactForm()
     
     context = {
         'form': form,
-        'title': 'Contact Us'
+        'title': _('Contact Us')
     }
     return render(request, 'contact/contact.html', context)
 
@@ -38,11 +39,11 @@ def newsletter_subscribe(request):
             
         return JsonResponse({
             'status': 'success',
-            'message': 'Thank you for subscribing to our newsletter!'
+            'message': _('Thank you for subscribing to our newsletter!')
         })
     return JsonResponse({
         'status': 'error',
-        'message': 'Invalid email address.'
+        'message': _('Invalid email address.')
     }, status=400)
 
 def newsletter_unsubscribe(request, email):
