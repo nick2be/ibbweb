@@ -59,3 +59,7 @@ Fixed service templates to use correct translation fields and added all services
 ---
 Initial translation file review and gettext installation query
 ---
+pledase pick up whasts missing from the django.po.backup file  to complete the translations
+---
+update the summary.txt and instructions.txt
+---

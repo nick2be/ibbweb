@@ -6,6 +6,13 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
         fields = ['name', 'email', 'company', 'subject', 'message']
+        labels = {
+            'name': _('Name'),
+            'email': _('Email'),
+            'company': _('Company'),
+            'subject': _('Subject'),
+            'message': _('Message'),
+        }
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': _('Your Name')}),
             'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': _('Your Email')}),
