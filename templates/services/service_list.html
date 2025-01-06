@@ -31,8 +31,8 @@
                             <i class="{{ service.icon_class|default:'fas fa-cogs' }} fa-3x"></i>
                         {% endif %}
                     </div>
-                    <h3 class="mb-3">{% if LANGUAGE_CODE == 'da' %}{{ service.name_da }}{% else %}{{ service.name_en }}{% endif %}</h3>
-                    <p class="mb-4">{% if LANGUAGE_CODE == 'da' %}{{ service.short_description_da }}{% else %}{{ service.short_description_en }}{% endif %}</p>
+                    <h3 class="mb-3">{{ service.name }}</h3>
+                    <p class="mb-4">{{ service.short_description }}</p>
                     <div class="mt-auto">
                         <a href="{% url 'services:detail' service.slug %}" class="btn btn-outline-primary">{% trans "Learn More" %}</a>
                     </div>

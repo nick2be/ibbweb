@@ -45,3 +45,17 @@ yes - pleace check the service cards.
 ---
 the translation is now working. Great. Place upda the instructions.txt and the summary.txt
 ---
+I need to pul an updaed code from git
+---
+Summary of the conversation so far:
+---
+The translations in the privacy policy is now visable on the page.
+---
+The user mentioned that the services translation has its own po file and indicated that they can't see all service cards on the main page service section or on the services page.
+---
+only "IT Development" service is listed.
+---
+Fixed service templates to use correct translation fields and added all services to the database.
+---
+Initial translation file review and gettext installation query
+---

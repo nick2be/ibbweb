@@ -130,6 +130,10 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+# Ensure proper encoding for Danish characters
+DEFAULT_CHARSET = 'utf-8'
+FILE_CHARSET = 'utf-8'
+
 LANGUAGES = [
     ('en', 'English'),
     ('da', 'Dansk'),

@@ -1,707 +1,86 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+﻿# Danish translations for services
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-20 13:00+0100\n"
 "PO-Revision-Date: 2024-12-20 13:00+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: \n"
+"Language-Team: Danish\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# Service Names and Descriptions
-msgid "Full Stack Development"
-msgstr "Full Stack Udvikling"
-
-msgid "From sleek user interfaces to powerful back-end systems, our Full Stack development services deliver seamless, end-to-end solutions tailored to your business needs."
-msgstr "Fra elegante brugergrænseflader til kraftfulde backend-systemer leverer vores Full Stack-udviklingstjenester problemfrie, komplette løsninger skræddersyet til dine forretningsbehov."
-
-msgid "Application Integrations"
-msgstr "Applikationsintegrationer"
-
-msgid "Streamline your workflows and boost efficiency with our Application Integration services, connecting your systems for a seamless, unified experience."
-msgstr "Strømlin dine arbejdsgange og øg effektiviteten med vores applikationsintegrationstjenester, der forbinder dine systemer til en problemfri, samlet oplevelse."
-
-msgid "Jira Development & Administration"
-msgstr "Jira Udvikling & Administration"
-
-msgid "Optimize your team's productivity with our Jira Development & Administration services—customized workflows, seamless integrations, and expert management tailored to your needs."
-msgstr "Optimer dit teams produktivitet med vores Jira Udviklings- og Administrationstjenester - tilpassede arbejdsgange, problemfri integrationer og ekspert administration skræddersyet til dine behov."
-
-msgid "Data Visualization and Business Intelligence"
-msgstr "Datavisualisering og Business Intelligence"
-
-msgid "Transform your data into actionable insights with our Data Visualization and Business Intelligence solutions—empowering smarter decisions through clear, impactful visuals."
-msgstr "Transformer dine data til handlingsorienterede indsigter med vores Datavisualiserings- og Business Intelligence-løsninger - gør det muligt at træffe smartere beslutninger gennem klare, effektfulde visualiseringer."
-
-msgid "IT Infrastructure Build and Development"
-msgstr "IT-infrastruktur Opbygning og Udvikling"
-
-msgid "Build a robust foundation for your business with our IT Infrastructure Build and Development services—scalable, secure, and tailored to drive your success."
-msgstr "Byg et robust fundament for din virksomhed med vores IT-infrastruktur Opbygnings- og Udviklingstjenester - skalerbar, sikker og skræddersyet til at drive din succes."
-
-#: .\ibbweb\news\models.py:9 .\ibbweb\news\models.py:54
-#: .\ibbweb\services\models.py:6 .\ibbweb\services\models.py:31
-#: .\ibbweb\templates\contact\contact.html:31
-msgid "Name"
-msgstr "Navn"
-
-#: .\ibbweb\news\models.py:11 .\ibbweb\services\models.py:9
-#: .\ibbweb\services\models.py:32
-msgid "Description"
-msgstr "Beskrivelse"
-
-#: .\ibbweb\news\models.py:14
-msgid "Category"
-msgstr "Kategori"
-
-#: .\ibbweb\news\models.py:15 .\ibbweb\news\models.py:32
-msgid "Categories"
-msgstr "Kategorier"
-
-#: .\ibbweb\news\models.py:27
-msgid "Title"
-msgstr "Titel"
-
-#: .\ibbweb\news\models.py:29
-#, fuzzy
-#| msgid "Contact"
-msgid "Content"
-msgstr "Indhold"
-
-#: .\ibbweb\news\models.py:30
-msgid "Excerpt"
-msgstr "Uddrag"
-
-#: .\ibbweb\news\models.py:30
-msgid "A short description that will appear in article previews"
-msgstr "En kort beskrivelse der vil blive vist i artikel forhåndsvisninger"
-
-#: .\ibbweb\news\models.py:31 .\ibbweb\services\models.py:11
-msgid "Image"
-msgstr "Billede"
-
-#: .\ibbweb\news\models.py:33
-msgid "Author"
-msgstr "Forfatter"
-
-#: .\ibbweb\news\models.py:34
-msgid "Published"
-msgstr "Udgivet"
-
-#: .\ibbweb\news\models.py:35
-#, fuzzy
-#| msgid "Key Features"
-msgid "Featured"
-msgstr "Fremhævet"
-
-#: .\ibbweb\news\models.py:41
-msgid "Article"
-msgstr "Artikel"
-
-#: .\ibbweb\news\models.py:42 .\ibbweb\news\models.py:56
-msgid "Articles"
-msgstr "Artikler"
-
-#: .\ibbweb\news\models.py:59
-msgid "Tag"
-msgstr "Tag"
-
-#: .\ibbweb\news\models.py:60
-msgid "Tags"
-msgstr "Tags"
-
-#: .\ibbweb\pages\views.py:29 .\ibbweb\templates\base.html:33
-#: .\ibbweb\templates\base.html:112
-#: .\ibbweb\templates\news\article_detail.html:12
-#: .\ibbweb\templates\services\service_detail.html:12
-msgid "Home"
-msgstr "Hjem"
-
-#: .\ibbweb\services\models.py:8
-msgid "Short Description"
-msgstr "Kort Beskrivelse"
-
-#: .\ibbweb\services\models.py:10 .\ibbweb\services\models.py:33
-msgid "Icon"
-msgstr "Ikon"
-
-#: .\ibbweb\services\models.py:12 .\ibbweb\services\models.py:34
-msgid "Order"
-msgstr "Rækkefølge"
-
-#: .\ibbweb\services\models.py:18
-#, fuzzy
-#| msgid "Services"
-msgid "Service"
-msgstr "Tjeneste"
-
-#: .\ibbweb\services\models.py:19 .\ibbweb\templates\base.html:36
-#: .\ibbweb\templates\base.html:113
-#: .\ibbweb\templates\services\service_detail.html:13
-msgid "Services"
-msgstr "Tjenester"
-
-#: .\ibbweb\services\models.py:33
-msgid "Font Awesome icon class"
-msgstr "Font Awesome ikon klasse"
-
-#: .\ibbweb\services\models.py:38
-#, fuzzy
-#| msgid "Key Features"
-msgid "Service Feature"
-msgstr "Tjenestefunktion"
-
-#: .\ibbweb\services\models.py:39
-#, fuzzy
-#| msgid "Key Features"
-msgid "Service Features"
-msgstr "Tjenestefunktioner"
-
-#: .\ibbweb\templates\base.html:8
-msgid ""
-"Indicium By Bounty ApS - Professional IT Development & Security Services"
-msgstr ""
-"Indicium By Bounty ApS - Professionel IT-udvikling & Sikkerhedstjenester"
-
-#: .\ibbweb\templates\base.html:9 .\ibbweb\templates\base.html:106
-#: .\ibbweb\templates\contact\contact.html:5
-#: .\ibbweb\templates\news\article_detail.html:5
-#: .\ibbweb\templates\news\article_list.html:5
-#: .\ibbweb\templates\news\category_list.html:5
-#: .\ibbweb\templates\news\tag_list.html:5
-#: .\ibbweb\templates\pages\about.html:5
-#: .\ibbweb\templates\pages\privacy.html:5
-#: .\ibbweb\templates\services\service_detail.html:5
-#: .\ibbweb\templates\services\service_list.html:5
-msgid "Indicium By Bounty ApS"
-msgstr "Indicium By Bounty ApS"
-
-#: .\ibbweb\templates\base.html:25
-msgid "Indicium By Bounty ApS Logo"
-msgstr "Indicium By Bounty ApS Logo"
-
-#: .\ibbweb\templates\base.html:39 .\ibbweb\templates\base.html:114
-#: .\ibbweb\templates\news\article_detail.html:13
-msgid "News"
-msgstr "Nyheder"
-
-#: .\ibbweb\templates\base.html:42 .\ibbweb\templates\base.html:115
-#: .\ibbweb\templates\pages\about.html:5
-msgid "About Us"
-msgstr "Om Os"
-
-#: .\ibbweb\templates\base.html:45 .\ibbweb\templates\base.html:116
-msgid "Contact"
-msgstr "Kontakt"
-
-#: .\ibbweb\templates\base.html:107 .\ibbweb\templates\pages\home.html:13
-msgid "Driving Innovation and Security in IT for Over 9 Years"
-msgstr "Driver Innovation og Sikkerhed i IT i Over 9 År"
-
-#: .\ibbweb\templates\base.html:110
-msgid "Quick Links"
-msgstr "Hurtige Links"
-
-#: .\ibbweb\templates\base.html:117 .\ibbweb\templates\pages\privacy.html:5
-#: .\ibbweb\templates\pages\privacy.html:12
-msgid "Privacy Policy"
-msgstr "Privatlivspolitik"
-
-#: .\ibbweb\templates\base.html:121 .\ibbweb\templates\contact\contact.html:5
-#: .\ibbweb\templates\contact\contact.html:12
-#: .\ibbweb\templates\pages\home.html:17
-#: .\ibbweb\templates\pages\privacy.html:72
-msgid "Contact Us"
-msgstr "Kontakt Os"
-
-#: .\ibbweb\templates\base.html:123 .\ibbweb\templates\contact\contact.html:45
-#: .\ibbweb\templates\contact\contact.html:79
-#: .\ibbweb\templates\pages\privacy.html:75
-msgid "Email"
-msgstr "E-mail"
-
-#: .\ibbweb\templates\base.html:124 .\ibbweb\templates\contact\contact.html:51
-#: .\ibbweb\templates\contact\contact.html:86
-#: .\ibbweb\templates\pages\privacy.html:76
-msgid "Phone"
-msgstr "Telefon"
-
-#: .\ibbweb\templates\base.html:130
-msgid "Indicium By Bounty ApS. All rights reserved."
-msgstr "Indicium By Bounty ApS. Alle rettigheder forbeholdes."
-
-#: .\ibbweb\templates\contact\contact.html:13
-msgid ""
-"Have a question or want to discuss a project? We'd love to hear from you."
-msgstr ""
-"Har du et spørgsmål eller vil du diskutere et projekt? Vi vil meget gerne "
-"høre fra dig."
-
-#: .\ibbweb\templates\contact\contact.html:37
-msgid "Company"
-msgstr "Virksomhed"
-
-#: .\ibbweb\templates\contact\contact.html:57
-msgid "Subject"
-msgstr "Emne"
-
-#: .\ibbweb\templates\contact\contact.html:61
-msgid "Message"
-msgstr "Besked"
-
-#: .\ibbweb\templates\contact\contact.html:64
-msgid "Send Message"
-msgstr "Send Besked"
-
-#: .\ibbweb\templates\contact\contact.html:93
-msgid "Location"
-msgstr "Placering"
-
-#: .\ibbweb\templates\contact\contact.html:94
-#: .\ibbweb\templates\pages\privacy.html:77
-msgid "Copenhagen, Denmark"
-msgstr "København, Danmark"
-
-#: .\ibbweb\templates\contact\contact.html:104
-msgid "Subscribe to Our Newsletter"
-msgstr "Tilmeld Dig Vores Nyhedsbrev"
-
-#: .\ibbweb\templates\contact\contact.html:105
-#: .\ibbweb\templates\news\article_list.html:14
-msgid "Stay updated with our latest news and insights."
-msgstr "Hold dig opdateret med vores seneste nyheder og indsigter."
-
-#: .\ibbweb\templates\contact\contact.html:111
-#: .\ibbweb\templates\news\article_detail.html:94
-#: .\ibbweb\templates\news\category_list.html:48
-#: .\ibbweb\templates\news\tag_list.html:47
-msgid "Enter your email address"
-msgstr "Indtast din e-mailadresse"
-
-#: .\ibbweb\templates\contact\contact.html:112
-#: .\ibbweb\templates\news\article_detail.html:95
-#: .\ibbweb\templates\news\category_list.html:49
-#: .\ibbweb\templates\news\tag_list.html:48
-msgid "Subscribe"
-msgstr "Tilmeld"
-
-#: .\ibbweb\templates\contact\contact.html:145
-msgid "An error occurred. Please try again later."
-msgstr "Der opstod en fejl. Prøv venligst igen senere."
-
-#: .\ibbweb\templates\news\article_detail.html:27
-msgid "By"
-msgstr ""
-
-#: .\ibbweb\templates\news\article_detail.html:62
-#, fuzzy
-#| msgid "Related Services"
-msgid "Related Articles"
-msgstr "Relaterede Tjenester"
-
-#: .\ibbweb\templates\news\article_detail.html:74
-#: .\ibbweb\templates\news\article_list.html:42
-#: .\ibbweb\templates\pages\home.html:98
-msgid "Read More"
-msgstr "Læs Mere"
-
-#: .\ibbweb\templates\news\article_detail.html:87
-#: .\ibbweb\templates\news\category_list.html:41
-#: .\ibbweb\templates\news\tag_list.html:40
-#, fuzzy
-#| msgid "Last updated"
-msgid "Stay Updated"
-msgstr "Sidst opdateret"
-
-#: .\ibbweb\templates\news\article_detail.html:88
-#: .\ibbweb\templates\news\category_list.html:42
-#: .\ibbweb\templates\news\tag_list.html:41
-msgid ""
-"Subscribe to our newsletter to receive the latest news and insights directly "
-"in your inbox."
-msgstr ""
-
-#: .\ibbweb\templates\news\article_list.html:5
-#: .\ibbweb\templates\news\article_list.html:13
-#: .\ibbweb\templates\pages\home.html:86
-msgid "Latest News"
-msgstr "Seneste Nyt"
-
-#: .\ibbweb\templates\news\article_list.html:54
-#, fuzzy
-#| msgid "Category"
-msgid "Browse by Category"
-msgstr "Kategori"
-
-#: .\ibbweb\templates\news\article_list.html:61
-#: .\ibbweb\templates\news\category_list.html:30
-#: .\ibbweb\templates\news\tag_list.html:29
-#, fuzzy
-#| msgid "Articles"
-msgid "View Articles"
-msgstr "Artikler"
-
-#: .\ibbweb\templates\news\article_list.html:72
-msgid "Popular Tags"
-msgstr ""
-
-#: .\ibbweb\templates\news\category_list.html:5
-#: .\ibbweb\templates\news\category_list.html:13
-#, fuzzy
-#| msgid "Categories"
-msgid "News Categories"
-msgstr "Kategorier"
-
-#: .\ibbweb\templates\news\category_list.html:14
-msgid ""
-"Browse our articles by category to find the information you're looking for."
-msgstr ""
-
-#: .\ibbweb\templates\news\category_list.html:29
-#: .\ibbweb\templates\news\tag_list.html:28
-#, fuzzy
-#| msgid "Articles"
-msgid "articles"
-msgstr "Artikler"
-
-#: .\ibbweb\templates\news\tag_list.html:5
-#: .\ibbweb\templates\news\tag_list.html:13
-#, fuzzy
-#| msgid "Articles"
-msgid "Article Tags"
-msgstr "Artikler"
-
-#: .\ibbweb\templates\news\tag_list.html:14
-msgid "Browse our articles by tags to find specific topics."
-msgstr ""
-
-#: .\ibbweb\templates\pages\about.html:13
-#, fuzzy
-#| msgid "Indicium By Bounty ApS"
-msgid "About Indicium By Bounty ApS"
-msgstr "Om Indicium By Bounty ApS"
-
-#: .\ibbweb\templates\pages\about.html:14
-#, python-format
-msgid ""
-"For over %(years)s years, we've been at the forefront of IT development and "
-"security, delivering innovative solutions to critical sectors."
-msgstr ""
-"I over %(years)s år har vi været i front inden for IT-udvikling og sikkerhed "
-"og leveret innovative løsninger til kritiske sektorer."
-
-#: .\ibbweb\templates\pages\about.html:15
-msgid ""
-"Our commitment to excellence and deep industry expertise has made us a "
-"trusted partner for organizations seeking reliable, secure, and efficient IT "
-"solutions."
-msgstr ""
-"Vores engagement i excellence og dybe brancheekspertise har gjort os til en "
-"betroet partner for organisationer, der søger pålidelige, sikre og effektive "
-"IT-løsninger."
-
-#: .\ibbweb\templates\pages\about.html:18
-msgid "Our Team"
-msgstr "Vores Team"
-
-#: .\ibbweb\templates\pages\about.html:31
-msgid "Our Mission"
-msgstr "Vores Mission"
-
-#: .\ibbweb\templates\pages\about.html:32
-msgid ""
-"To deliver innovative IT solutions that drive business success while "
-"maintaining the highest standards of security and reliability."
-msgstr ""
-"At levere innovative IT-løsninger, der driver forretningssucces, mens vi "
-"opretholder de højeste standarder for sikkerhed og pålidelighed."
-
-#: .\ibbweb\templates\pages\about.html:38
-msgid "Our Vision"
-msgstr "Vores Vision"
-
-#: .\ibbweb\templates\pages\about.html:39
-msgid ""
-"To be the leading provider of secure and efficient IT solutions for critical "
-"business sectors across Europe."
-msgstr ""
-"At være den førende leverandør af sikre og effektive IT-løsninger til "
-"kritiske forretningssektorer i hele Europa."
-
-#: .\ibbweb\templates\pages\about.html:45
-msgid "Our Values"
-msgstr "Vores Værdier"
-
-#: .\ibbweb\templates\pages\about.html:46
-msgid ""
-"Excellence, integrity, innovation, and commitment to our clients' success "
-"guide everything we do."
-msgstr ""
-"Excellence, integritet, innovation og engagement i vores kunders succes "
-"guider alt, hvad vi gør."
-
-#: .\ibbweb\templates\pages\about.html:56
-#, fuzzy
-#| msgid "Our Services"
-msgid "Our Expertise"
-msgstr "Vores Tjenester"
-
-#: .\ibbweb\templates\pages\about.html:61
-msgid "Technical Excellence"
-msgstr "Teknisk Excellence"
-
-#: .\ibbweb\templates\pages\about.html:62
-msgid ""
-"Our team of experts brings deep technical knowledge and years of experience "
-"in:"
-msgstr ""
-"Vores team af eksperter bringer dyb teknisk viden og års erfaring inden for:"
-
-#: .\ibbweb\templates\pages\about.html:64
-msgid "Jira Development & Administration"
-msgstr "Jira Udvikling & Administration"
-
-#: .\ibbweb\templates\pages\about.html:65
-msgid "Full Stack Web Development"
-msgstr "Full Stack Webudvikling"
-
-#: .\ibbweb\templates\pages\about.html:66
-msgid "Application Integration"
-msgstr "Applikationsintegration"
-
-#: .\ibbweb\templates\pages\about.html:67
-msgid "Data Warehousing"
-msgstr "Data Warehousing"
-
-#: .\ibbweb\templates\pages\about.html:75
-msgid "Industry Focus"
-msgstr "Branchefokus"
-
-#: .\ibbweb\templates\pages\about.html:76
-msgid "We specialize in serving critical sectors including:"
-msgstr "Vi er specialiseret i at betjene kritiske sektorer, herunder:"
-
-#: .\ibbweb\templates\pages\about.html:78
-msgid "Banking & Financial Services"
-msgstr "Bank & Finansielle Tjenester"
-
-#: .\ibbweb\templates\pages\about.html:79 .\ibbweb\templates\pages\home.html:63
-#: .\ibbweb\templates\pages\home.html:64
-msgid "Insurance"
-msgstr "Forsikring"
-
-#: .\ibbweb\templates\pages\about.html:80 .\ibbweb\templates\pages\home.html:69
-#: .\ibbweb\templates\pages\home.html:70
-msgid "Logistics"
-msgstr "Logistik"
-
-#: .\ibbweb\templates\pages\about.html:81
-#, fuzzy
-#| msgid "Enterprise"
-msgid "Enterprise Solutions"
-msgstr "Enterprise-løsninger"
-
-#: .\ibbweb\templates\pages\about.html:93
-msgid "Our Leadership Team"
-msgstr "Vores Ledelsesteam"
-
-#: .\ibbweb\templates\pages\about.html:97
-msgid "CEO"
-msgstr "Administrerende Direktør"
-
-#: .\ibbweb\templates\pages\about.html:100
-msgid "CEO & Founder"
-msgstr "Administrerende Direktør & Grundlægger"
-
-#: .\ibbweb\templates\pages\about.html:106
-#: .\ibbweb\templates\pages\about.html:109
-msgid "CTO"
-msgstr "Teknisk Direktør"
-
-#: .\ibbweb\templates\pages\about.html:115
-msgid "CSO"
-msgstr "Sikkerhedsdirektør"
-
-#: .\ibbweb\templates\pages\about.html:118
-msgid "Chief Security Officer"
-msgstr "Sikkerhedsdirektør"
-
-#: .\ibbweb\templates\pages\about.html:129
-msgid "Ready to Work Together?"
-msgstr "Klar til at Arbejde Sammen?"
-
-#: .\ibbweb\templates\pages\about.html:130
-#, fuzzy
-#| msgid ""
-#| "Let's discuss how we can help your business thrive with our professional "
-#| "IT services."
-msgid "Let's discuss how we can help your organization achieve its IT goals."
-msgstr ""
-"Lad os diskutere, hvordan vi kan hjælpe din virksomhed med at trives med "
-"vores professionelle IT-tjenester."
-
-#: .\ibbweb\templates\pages\about.html:131
-#: .\ibbweb\templates\pages\home.html:112
-#: .\ibbweb\templates\services\service_detail.html:76
-#: .\ibbweb\templates\services\service_list.html:47
-msgid "Get in Touch"
-msgstr "Kontakt Os"
-
-#: .\ibbweb\templates\pages\home.html:5
-#, fuzzy
-#| msgid ""
-#| "Indicium By Bounty ApS - Professional IT Development & Security Services"
-msgid "Indicium By Bounty ApS - IT Development & Security Services"
-msgstr ""
-"Indicium By Bounty ApS - Professionel IT-udvikling & Sikkerhedstjenester"
-
-#: .\ibbweb\templates\pages\home.html:14
-msgid ""
-"Professional IT development and security services for banking, insurance, "
-"logistics, and other critical sectors."
-msgstr ""
-"Professionel IT-udvikling og sikkerhedstjenester til bank, forsikring, "
-"logistik og andre kritiske sektorer."
-
-#: .\ibbweb\templates\pages\home.html:16 .\ibbweb\templates\pages\home.html:30
-#: .\ibbweb\templates\services\service_list.html:5
-#: .\ibbweb\templates\services\service_list.html:13
-msgid "Our Services"
-msgstr "Vores Tjenester"
-
-#: .\ibbweb\templates\pages\home.html:21
-msgid "IT Services"
-msgstr "IT-tjenester"
-
-#: .\ibbweb\templates\pages\home.html:42
-#: .\ibbweb\templates\services\service_detail.html:96
-#: .\ibbweb\templates\services\service_list.html:34
-msgid "Learn More"
-msgstr "Læs Mere"
-
-#: .\ibbweb\templates\pages\home.html:53
-msgid "Industries We Serve"
-msgstr "Brancher Vi Betjener"
-
-#: .\ibbweb\templates\pages\home.html:57 .\ibbweb\templates\pages\home.html:58
-msgid "Banking"
-msgstr "Bank"
-
-#: .\ibbweb\templates\pages\home.html:75 .\ibbweb\templates\pages\home.html:76
-msgid "Enterprise"
-msgstr "Enterprise"
-
-#: .\ibbweb\templates\pages\home.html:110
-msgid "Ready to Transform Your IT Infrastructure?"
-msgstr "Klar til at Transformere Din IT-infrastruktur?"
-
-#: .\ibbweb\templates\pages\home.html:111
-msgid ""
-"Let's discuss how we can help your business thrive with our professional IT "
-"services."
-msgstr ""
-"Lad os diskutere, hvordan vi kan hjælpe din virksomhed med at trives med "
-"vores professionelle IT-tjenester."
-
-#: .\ibbweb\templates\pages\privacy.html:13
-msgid ""
-"At Indicium By Bounty ApS, we take your privacy seriously. This policy "
-"outlines how we collect, use, and protect your personal information."
-msgstr ""
-"Hos Indicium By Bounty ApS tager vi din privatlivsbeskyttelse alvorligt. "
-"Denne politik beskriver, hvordan vi indsamler, bruger og beskytter dine "
-"personlige oplysninger."
-
-#: .\ibbweb\templates\pages\privacy.html:16
-msgid "Information We Collect"
-msgstr "Information Vi Indsamler"
-
-#: .\ibbweb\templates\pages\privacy.html:17
-msgid "We collect information that you provide directly to us, including:"
-msgstr "Vi indsamler information, som du giver direkte til os, herunder:"
-
-#: .\ibbweb\templates\pages\privacy.html:19
-msgid "Name and contact information"
-msgstr "Navn og kontaktoplysninger"
-
-#: .\ibbweb\templates\pages\privacy.html:20
-msgid "Company details"
-msgstr "Virksomhedsdetaljer"
-
-#: .\ibbweb\templates\pages\privacy.html:21
-msgid "Email correspondence"
-msgstr "E-mail korrespondance"
-
-#: .\ibbweb\templates\pages\privacy.html:22
-msgid "Information provided through our contact forms"
-msgstr "Information givet gennem vores kontaktformularer"
-
-#: .\ibbweb\templates\services\service_detail.html:74
-msgid "Interested in"
-msgstr "Interesseret i"
-
-#: .\ibbweb\templates\services\service_detail.html:75
-#: .\ibbweb\templates\services\service_list.html:46
-msgid "Contact us to discuss how we can help with your specific requirements."
-msgstr "Kontakt os for at diskutere, hvordan vi kan hjælpe med dine specifikke krav."
-
-#: .\ibbweb\templates\services\service_detail.html:84
-msgid "Related Services"
-msgstr "Relaterede Tjenester"
-
-#: .\ibbweb\templates\services\service_list.html:14
 msgid "We offer a comprehensive range of IT development and security services tailored to meet your business needs."
 msgstr "Vi tilbyder en omfattende række IT-udviklings- og sikkerhedstjenester skræddersyet til at opfylde dine forretningsbehov."
 
-#: .\ibbweb\templates\services\service_list.html:45
-msgid "Need a Custom Solution?"
-msgstr "Har Du Brug for en Skræddersyet Løsning?"
-
-#: .\ibbweb\services\models.py:0
 msgid "Full Stack Development"
 msgstr "Full Stack Udvikling"
 
-#: .\ibbweb\services\models.py:0
-msgid "From sleek user interfaces to powerful back-end systems, our Full Stack development services deliver seamless, end-to-end solutions tailored to your business needs."
-msgstr "Fra elegante brugergrænseflader til kraftfulde backend-systemer leverer vores Full Stack-udviklingstjenester problemfrie, komplette løsninger skræddersyet til dine forretningsbehov."
-
-#: .\ibbweb\services\models.py:0
 msgid "Application Integrations"
 msgstr "Applikationsintegrationer"
 
-#: .\ibbweb\services\models.py:0
-msgid "Streamline your workflows and boost efficiency with our Application Integration services, connecting your systems for a seamless, unified experience."
-msgstr "Strømlin dine arbejdsgange og øg effektiviteten med vores applikationsintegrationstjenester, der forbinder dine systemer til en problemfri, samlet oplevelse."
-
-#: .\ibbweb\services\models.py:0
 msgid "Jira Development & Administration"
 msgstr "Jira Udvikling & Administration"
 
-#: .\ibbweb\services\models.py:0
-msgid "Optimize your team's productivity with our Jira Development & Administration services—customized workflows, seamless integrations, and expert management tailored to your needs."
-msgstr "Optimer dit teams produktivitet med vores Jira Udviklings- og Administrationstjenester - tilpassede arbejdsgange, problemfri integrationer og ekspert administration skræddersyet til dine behov."
-
-#: .\ibbweb\services\models.py:0
 msgid "Data Visualization and Business Intelligence"
 msgstr "Datavisualisering og Business Intelligence"
 
-#: .\ibbweb\services\models.py:0
-msgid "Transform your data into actionable insights with our Data Visualization and Business Intelligence solutions—empowering smarter decisions through clear, impactful visuals."
-msgstr "Transformer dine data til handlingsorienterede indsigter med vores Datavisualiserings- og Business Intelligence-løsninger - gør det muligt at træffe smartere beslutninger gennem klare, effektfulde visualiseringer."
-
-#: .\ibbweb\services\models.py:0
 msgid "IT Infrastructure Build and Development"
 msgstr "IT-infrastruktur Opbygning og Udvikling"
 
-#: .\ibbweb\services\models.py:0
-msgid "Build a robust foundation for your business with our IT Infrastructure Build and Development services—scalable, secure, and tailored to drive your success."
-msgstr "Byg et robust fundament for din virksomhed med vores IT-infrastruktur Opbygnings- og Udviklingstjenester - skalerbar, sikker og skræddersyet til at drive din succes."
+msgid "End-to-end development solutions from frontend to backend."
+msgstr "End-to-end udviklingsløsninger fra frontend til backend."
+
+msgid "Seamless integration of applications and systems."
+msgstr "Problemfri integration af applikationer og systemer."
+
+msgid "Custom Jira solutions and efficient administration."
+msgstr "Skræddersyede Jira-løsninger og effektiv administration."
+
+msgid "Transform data into actionable insights."
+msgstr "Transformer data til handlingsorienterede indsigter."
+
+msgid "Robust and scalable IT infrastructure solutions."
+msgstr "Robuste og skalerbare IT-infrastrukturløsninger."
+
+msgid "Our Services"
+msgstr "Vores Tjenester"
+
+msgid "Learn More"
+msgstr "Læs Mere"
+
+msgid "Need a Custom Solution?"
+msgstr "Har Du Brug for en Tilpasset Løsning?"
+
+msgid "Contact us to discuss how we can help with your specific requirements."
+msgstr "Kontakt os for at diskutere, hvordan vi kan hjælpe med dine specifikke krav."
+
+msgid "Get in Touch"
+msgstr "Kontakt Os"
+
+msgid "Key Features"
+msgstr "Nøglefunktioner"
+
+msgid "Interested in"
+msgstr "Interesseret i"
+
+msgid "Related Services"
+msgstr "Relaterede Tjenester"
+
+msgid "Our full stack development services cover the entire spectrum of web and application development. From user interfaces to server architecture, we deliver complete solutions."
+msgstr "Vores full stack udviklingstjenester dækker hele spektret af web- og applikationsudvikling. Fra brugergrænseflader til serverarkitektur leverer vi komplette løsninger."
+
+msgid "We specialize in connecting different applications and systems to work together efficiently. Our integration solutions ensure smooth data flow and process automation."
+msgstr "Vi er specialiserede i at forbinde forskellige applikationer og systemer til at arbejde effektivt sammen. Vores integrationsløsninger sikrer problemfri dataflow og procesautomatisering."
+
+msgid "Our Jira expertise covers both custom development and administration. We help optimize your workflows and create custom solutions that match your specific needs."
+msgstr "Vores Jira-ekspertise dækker både skræddersyet udvikling og administration. Vi hjælper med at optimere dine arbejdsgange og skabe tilpassede løsninger, der matcher dine specifikke behov."
+
+msgid "We help you make sense of your data through powerful visualization tools and business intelligence solutions. Turn complex data into clear, actionable insights."
+msgstr "Vi hjælper dig med at forstå dine data gennem kraftfulde visualiseringsværktøjer og business intelligence-løsninger. Omdanner komplekse data til klare, handlingsorienterede indsigter."
+
+msgid "We design and implement IT infrastructure that grows with your business. Our solutions focus on security, scalability, and performance."
+msgstr "Vi designer og implementerer IT-infrastruktur, der vokser med din virksomhed. Vores løsninger fokuserer på sikkerhed, skalerbarhed og ydeevne." 

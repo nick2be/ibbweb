@@ -30,3 +30,7 @@ media/
 # System Files
 .DS_Store
 Thumbs.db 
+
+# Cursor
+.cursorrules
+

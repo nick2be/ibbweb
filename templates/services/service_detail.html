@@ -2,7 +2,7 @@
 {% load static %}
 {% load i18n %}
 
-{% block title %}{% if LANGUAGE_CODE == 'da' %}{{ service.name_da }}{% else %}{{ service.name_en }}{% endif %} - {% trans "Indicium By Bounty ApS" %}{% endblock %}
+{% block title %}{{ service.name }} - {% trans "Indicium By Bounty ApS" %}{% endblock %}
 
 {% block content %}
 <!-- Breadcrumb -->
@@ -11,7 +11,7 @@
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">{% trans "Home" %}</a></li>
             <li class="breadcrumb-item"><a href="{% url 'services:list' %}">{% trans "Services" %}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{% if LANGUAGE_CODE == 'da' %}{{ service.name_da }}{% else %}{{ service.name_en }}{% endif %}</li>
+            <li class="breadcrumb-item active" aria-current="page">{{ service.name }}</li>
         </ol>
     </div>
 </nav>
@@ -21,12 +21,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
-                <h1 class="mb-4">{% if LANGUAGE_CODE == 'da' %}{{ service.name_da }}{% else %}{{ service.name_en }}{% endif %}</h1>
-                <p class="lead mb-4">{% if LANGUAGE_CODE == 'da' %}{{ service.short_description_da }}{% else %}{{ service.short_description_en }}{% endif %}</p>
+                <h1 class="mb-4">{{ service.name }}</h1>
+                <p class="lead mb-4">{{ service.short_description }}</p>
             </div>
             <div class="col-lg-4 text-center">
                 {% if service.icon %}
-                    <img src="{{ service.icon.url }}" alt="{% if LANGUAGE_CODE == 'da' %}{{ service.name_da }}{% else %}{{ service.name_en }}{% endif %}" class="img-fluid mb-3" width="120">
+                    <img src="{{ service.icon.url }}" alt="{{ service.name }}" class="img-fluid mb-3" width="120">
                 {% else %}
                     <i class="fas fa-cogs fa-5x mb-3"></i>
                 {% endif %}
@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="service-description">
-                    {% if LANGUAGE_CODE == 'da' %}{{ service.description_da|linebreaks }}{% else %}{{ service.description_en|linebreaks }}{% endif %}
+                    {{ service.description|linebreaks }}
                 </div>
             </div>
         </div>
@@ -58,8 +58,8 @@
             <div class="col-md-6 col-lg-4">
                 <div class="feature-card text-center h-100">
                     <i class="{{ feature.icon }} fa-3x mb-3"></i>
-                    <h3>{% if LANGUAGE_CODE == 'da' %}{{ feature.name_da }}{% else %}{{ feature.name_en }}{% endif %}</h3>
-                    <p>{% if LANGUAGE_CODE == 'da' %}{{ feature.description_da }}{% else %}{{ feature.description_en }}{% endif %}</p>
+                    <h3>{{ feature.name }}</h3>
+                    <p>{{ feature.description }}</p>
                 </div>
             </div>
             {% endfor %}
@@ -71,7 +71,7 @@
 <!-- Call to Action -->
 <section class="py-5 bg-primary text-white">
     <div class="container text-center">
-        <h2 class="mb-4">{% trans "Interested in" %} {% if LANGUAGE_CODE == 'da' %}{{ service.name_da }}{% else %}{{ service.name_en }}{% endif %}?</h2>
+        <h2 class="mb-4">{% trans "Interested in" %} {{ service.name }}?</h2>
         <p class="lead mb-4">{% trans "Contact us to discuss how we can help with your specific requirements." %}</p>
         <a href="{% url 'contact:contact' %}" class="btn btn-light btn-lg">{% trans "Get in Touch" %}</a>
     </div>
@@ -87,12 +87,12 @@
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
                     {% if related.icon %}
-                        <img src="{{ related.icon.url }}" alt="{% if LANGUAGE_CODE == 'da' %}{{ related.name_da }}{% else %}{{ related.name_en }}{% endif %}" class="mb-3" width="48">
+                        <img src="{{ related.icon.url }}" alt="{{ related.name }}" class="mb-3" width="48">
                     {% else %}
                         <i class="fas fa-cogs fa-3x mb-3"></i>
                     {% endif %}
-                    <h3>{% if LANGUAGE_CODE == 'da' %}{{ related.name_da }}{% else %}{{ related.name_en }}{% endif %}</h3>
-                    <p>{% if LANGUAGE_CODE == 'da' %}{{ related.short_description_da }}{% else %}{{ related.short_description_en }}{% endif %}</p>
+                    <h3>{{ related.name }}</h3>
+                    <p>{{ related.short_description }}</p>
                     <a href="{% url 'services:detail' related.slug %}" class="btn btn-outline-primary">{% trans "Learn More" %}</a>
                 </div>
             </div>

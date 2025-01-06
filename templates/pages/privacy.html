@@ -5,14 +5,44 @@
 {% block title %}{% trans "Privacy Policy" %} - {% trans "Indicium By Bounty ApS" %}{% endblock %}
 
 {% block content %}
+<!-- Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="mb-4">{% trans "Privacy Policy" %}</h1>
+                <p class="lead">{% trans "At Indicium By Bounty ApS, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
 <section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h1 class="mb-4">{% trans "Privacy Policy" %}</h1>
-                <p class="lead mb-5">{% trans "At Indicium By Bounty ApS, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information." %}</p>
+                <!-- Table of Contents -->
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">{% trans "Table of Contents" %}</h2>
+                        <ol class="mb-0">
+                            <li><a href="#information-we-collect">{% trans "Information We Collect" %}</a></li>
+                            <li><a href="#how-we-use">{% trans "How We Use Your Information" %}</a></li>
+                            <li><a href="#data-retention">{% trans "Data Retention" %}</a></li>
+                            <li><a href="#data-protection">{% trans "Data Protection" %}</a></li>
+                            <li><a href="#your-rights">{% trans "Your Rights" %}</a></li>
+                            <li><a href="#cookies">{% trans "Cookies" %}</a></li>
+                            <li><a href="#third-party">{% trans "Third-Party Services" %}</a></li>
+                            <li><a href="#international">{% trans "International Data Transfers" %}</a></li>
+                            <li><a href="#changes">{% trans "Changes to This Policy" %}</a></li>
+                            <li><a href="#contact">{% trans "Contact Us" %}</a></li>
+                        </ol>
+                    </div>
+                </div>
 
-                <div class="mb-5">
+                <!-- Information We Collect -->
+                <div id="information-we-collect" class="mb-5">
                     <h2>{% trans "Information We Collect" %}</h2>
                     <p>{% trans "We collect information that you provide directly to us, including:" %}</p>
                     <ul>
@@ -20,10 +50,13 @@
                         <li>{% trans "Company details" %}</li>
                         <li>{% trans "Email correspondence" %}</li>
                         <li>{% trans "Information provided through our contact forms" %}</li>
+                        <li>{% trans "Technical information such as IP address and browser type" %}</li>
+                        <li>{% trans "Usage data and analytics" %}</li>
                     </ul>
                 </div>
 
-                <div class="mb-5">
+                <!-- How We Use Your Information -->
+                <div id="how-we-use" class="mb-5">
                     <h2>{% trans "How We Use Your Information" %}</h2>
                     <p>{% trans "We use the information we collect to:" %}</p>
                     <ul>
@@ -32,54 +65,145 @@
                         <li>{% trans "Send newsletters and updates (with your consent)" %}</li>
                         <li>{% trans "Improve our website and services" %}</li>
                         <li>{% trans "Comply with legal obligations" %}</li>
+                        <li>{% trans "Analyze and improve website performance" %}</li>
+                        <li>{% trans "Protect against fraud and unauthorized access" %}</li>
                     </ul>
                 </div>
 
-                <div class="mb-5">
-                    <h2>{% trans "Data Protection" %}</h2>
-                    <p>{% trans "We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful processing, accidental loss, destruction, or damage." %}</p>
+                <!-- Data Retention -->
+                <div id="data-retention" class="mb-5">
+                    <h2>{% trans "Data Retention" %}</h2>
+                    <p>{% trans "We retain your personal data for as long as necessary to fulfill the purposes for which we collected it, including:" %}</p>
+                    <ul>
+                        <li>{% trans "Contact form submissions: 2 years" %}</li>
+                        <li>{% trans "Newsletter subscriptions: Until unsubscribed" %}</li>
+                        <li>{% trans "Service-related data: Duration of service plus 5 years" %}</li>
+                        <li>{% trans "Usage analytics: 26 months" %}</li>
+                    </ul>
                 </div>
 
-                <div class="mb-5">
+                <!-- Data Protection -->
+                <div id="data-protection" class="mb-5">
+                    <h2>{% trans "Data Protection" %}</h2>
+                    <p>{% trans "We implement appropriate technical and organizational measures to protect your personal data, including:" %}</p>
+                    <ul>
+                        <li>{% trans "SSL/TLS encryption for all data transmission" %}</li>
+                        <li>{% trans "Secure data storage with regular backups" %}</li>
+                        <li>{% trans "Access controls and authentication measures" %}</li>
+                        <li>{% trans "Regular security assessments and updates" %}</li>
+                    </ul>
+                </div>
+
+                <!-- Your Rights -->
+                <div id="your-rights" class="mb-5">
                     <h2>{% trans "Your Rights" %}</h2>
                     <p>{% trans "Under GDPR, you have the following rights:" %}</p>
-                    <ul>
-                        <li>{% trans "Right to access your personal data" %}</li>
-                        <li>{% trans "Right to rectification" %}</li>
-                        <li>{% trans "Right to erasure ('right to be forgotten')" %}</li>
-                        <li>{% trans "Right to restrict processing" %}</li>
-                        <li>{% trans "Right to data portability" %}</li>
-                        <li>{% trans "Right to object" %}</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>{% trans "Right to access your personal data" %}</li>
+                                <li>{% trans "Right to rectification" %}</li>
+                                <li>{% trans "Right to erasure ('right to be forgotten')" %}</li>
+                                <li>{% trans "Right to restrict processing" %}</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>{% trans "Right to data portability" %}</li>
+                                <li>{% trans "Right to object" %}</li>
+                                <li>{% trans "Right to withdraw consent" %}</li>
+                                <li>{% trans "Right to lodge a complaint" %}</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mb-5">
+                <!-- Cookies -->
+                <div id="cookies" class="mb-5">
                     <h2>{% trans "Cookies" %}</h2>
-                    <p>{% trans "Our website uses cookies to enhance your browsing experience. You can control cookie settings through your browser preferences." %}</p>
+                    <p>{% trans "Our website uses the following types of cookies:" %}</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>{% trans "Type" %}</th>
+                                    <th>{% trans "Purpose" %}</th>
+                                    <th>{% trans "Duration" %}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{% trans "Essential" %}</td>
+                                    <td>{% trans "Website functionality" %}</td>
+                                    <td>{% trans "Session" %}</td>
+                                </tr>
+                                <tr>
+                                    <td>{% trans "Analytics" %}</td>
+                                    <td>{% trans "Performance monitoring" %}</td>
+                                    <td>26 {% trans "months" %}</td>
+                                </tr>
+                                <tr>
+                                    <td>{% trans "Preferences" %}</td>
+                                    <td>{% trans "User settings" %}</td>
+                                    <td>1 {% trans "year" %}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-                <div class="mb-5">
+                <!-- Third-Party Services -->
+                <div id="third-party" class="mb-5">
                     <h2>{% trans "Third-Party Services" %}</h2>
-                    <p>{% trans "We may use third-party services that collect, monitor, and analyze data. These services have their own privacy policies." %}</p>
+                    <p>{% trans "We use the following third-party services:" %}</p>
+                    <ul>
+                        <li>{% trans "Google Analytics for website analytics" %}</li>
+                        <li>{% trans "MailChimp for newsletter management" %}</li>
+                        <li>{% trans "Cloudflare for content delivery and security" %}</li>
+                    </ul>
+                    <p>{% trans "Each service has its own privacy policy and data processing practices." %}</p>
                 </div>
 
-                <div class="mb-5">
-                    <h2>{% trans "Changes to This Policy" %}</h2>
-                    <p>{% trans "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page." %}</p>
-                </div>
-
-                <div class="mb-5">
-                    <h2>{% trans "Contact Us" %}</h2>
-                    <p>{% trans "If you have any questions about this privacy policy, please contact us at:" %}</p>
-                    <ul class="list-unstyled">
-                        <li>{% trans "Email" %}: privacy@indiciumbybounty.com</li>
-                        <li>{% trans "Phone" %}: +45 XX XX XX XX</li>
-                        <li>{% trans "Address" %}: {% trans "Copenhagen, Denmark" %}</li>
+                <!-- International Data Transfers -->
+                <div id="international" class="mb-5">
+                    <h2>{% trans "International Data Transfers" %}</h2>
+                    <p>{% trans "Your data may be transferred to and processed in countries outside the European Economic Area (EEA). We ensure appropriate safeguards through:" %}</p>
+                    <ul>
+                        <li>{% trans "EU Standard Contractual Clauses" %}</li>
+                        <li>{% trans "Privacy Shield certification (where applicable)" %}</li>
+                        <li>{% trans "Data Processing Agreements" %}</li>
                     </ul>
                 </div>
 
+                <!-- Changes -->
+                <div id="changes" class="mb-5">
+                    <h2>{% trans "Changes to This Policy" %}</h2>
+                    <p>{% trans "We may update this privacy policy from time to time. We will notify you of any material changes by:" %}</p>
+                    <ul>
+                        <li>{% trans "Posting the new policy on this page" %}</li>
+                        <li>{% trans "Sending an email to registered users" %}</li>
+                        <li>{% trans "Displaying a notice on our website" %}</li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div id="contact" class="mb-5">
+                    <h2>{% trans "Contact Us" %}</h2>
+                    <p>{% trans "If you have any questions about this privacy policy, please contact our Data Protection Officer:" %}</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>{% trans "Email" %}:</strong> privacy@indiciumbybounty.com</li>
+                                <li><strong>{% trans "Phone" %}:</strong> +45 XX XX XX XX</li>
+                                <li><strong>{% trans "Address" %}:</strong> {% trans "Copenhagen, Denmark" %}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Last Updated -->
                 <div class="text-muted">
-                    <p>{% trans "Last updated" %}: {% now "F j, Y" %}</p>
+                    <p><strong>{% trans "Last updated" %}:</strong> {% now "F j, Y" %}</p>
                 </div>
             </div>
         </div>
