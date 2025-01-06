@@ -254,10 +254,11 @@ msgstr "Indicium By Bounty ApS. Alle rettigheder forbeholdes."
 msgid ""
 "Have a question or want to discuss a project? We'd love to hear from you."
 msgstr ""
+"Har du et spørgsmål eller ønsker at diskutere et projekt? Vi vil gerne høre fra dig."
 
 #: .\templates\contact\contact.html:37
 msgid "Company"
-msgstr ""
+msgstr "Virksomhed"
 
 #: .\templates\contact\contact.html:61
 msgid "Message"
@@ -575,90 +576,92 @@ msgstr ""
 "Lad os diskutere, hvordan vi kan hjælpe din virksomhed med at trives med "
 "vores professionelle IT-tjenester."
 
+# Privacy page
 #: .\templates\pages\privacy.html:14
 msgid ""
 "At Indicium By Bounty ApS, we take your privacy seriously. This policy "
 "outlines how we collect, use, and protect your personal information."
 msgstr ""
+"Ved Indicium By Bounty ApS, tager vi din personlige information alvorligt. Denne politik beskriver, hvordan vi samler, bruger og beskytter din personlige information."
 
 #: .\templates\pages\privacy.html:28
 msgid "Table of Contents"
-msgstr ""
+msgstr "Indholdsfortegnelse"
 
 #: .\templates\pages\privacy.html:30 .\templates\pages\privacy.html:46
 msgid "Information We Collect"
-msgstr ""
+msgstr "Information Vi Samler"
 
 #: .\templates\pages\privacy.html:31 .\templates\pages\privacy.html:60
 msgid "How We Use Your Information"
-msgstr ""
+msgstr "Hvordan Vi Bruger Din Information"
 
 #: .\templates\pages\privacy.html:32 .\templates\pages\privacy.html:75
 msgid "Data Retention"
-msgstr ""
+msgstr "Data Opbevaring"
 
 #: .\templates\pages\privacy.html:33 .\templates\pages\privacy.html:87
 msgid "Data Protection"
-msgstr ""
+msgstr "Data Beskyttelse"
 
 #: .\templates\pages\privacy.html:34 .\templates\pages\privacy.html:99
 msgid "Your Rights"
-msgstr ""
+msgstr "Dine Rettigheder"
 
 #: .\templates\pages\privacy.html:35 .\templates\pages\privacy.html:123
 msgid "Cookies"
-msgstr ""
+msgstr "Cookies"
 
 # Service Translations
 #: .\templates\pages\privacy.html:36 .\templates\pages\privacy.html:157
 #, fuzzy
 #| msgid "Our Services"
 msgid "Third-Party Services"
-msgstr "Vores Tjenester"
+msgstr "Tredjeparts Tjenester"
 
 #: .\templates\pages\privacy.html:37 .\templates\pages\privacy.html:169
 msgid "International Data Transfers"
-msgstr ""
+msgstr "Internationale Data Overførsler"
 
 #: .\templates\pages\privacy.html:38 .\templates\pages\privacy.html:180
 msgid "Changes to This Policy"
-msgstr ""
+msgstr "Ændringer i Denne Politik"
 
 #: .\templates\pages\privacy.html:47
 msgid "We collect information that you provide directly to us, including:"
-msgstr ""
+msgstr "Vi samler information, du giver direkte til os, herunder:"
 
 #: .\templates\pages\privacy.html:49
 msgid "Name and contact information"
-msgstr ""
+msgstr "Navn og kontaktinformation"
 
 #: .\templates\pages\privacy.html:50
 msgid "Company details"
-msgstr ""
+msgstr "Virksomhedsdetaljer"
 
 #: .\templates\pages\privacy.html:51
 msgid "Email correspondence"
-msgstr ""
+msgstr "Email-samtaler"
 
 #: .\templates\pages\privacy.html:52
 msgid "Information provided through our contact forms"
-msgstr ""
+msgstr "Information, der leveres gennem vores kontaktformer"
 
 #: .\templates\pages\privacy.html:53
 msgid "Technical information such as IP address and browser type"
-msgstr ""
+msgstr "Teknisk information, såsom IP-adresse og browser-type"
 
 #: .\templates\pages\privacy.html:54
 msgid "Usage data and analytics"
-msgstr ""
+msgstr "Brugsdata og analyser"
 
 #: .\templates\pages\privacy.html:61
 msgid "We use the information we collect to:"
-msgstr ""
+msgstr "Vi bruger den information, vi samler, til følgende:"
 
 #: .\templates\pages\privacy.html:63
 msgid "Respond to your inquiries"
-msgstr ""
+msgstr "Svare på dine spørgsmål"
 
 # Service Translations
 #: .\templates\pages\privacy.html:64
@@ -669,240 +672,244 @@ msgstr "Vores Tjenester"
 
 #: .\templates\pages\privacy.html:65
 msgid "Send newsletters and updates (with your consent)"
-msgstr ""
+msgstr "Sende nyhedsbreve og opdateringer (med din samtykke)"
 
 #: .\templates\pages\privacy.html:66
 msgid "Improve our website and services"
-msgstr ""
+msgstr "Forbedre vores hjemmeside og tjenester"
 
 #: .\templates\pages\privacy.html:67
 msgid "Comply with legal obligations"
-msgstr ""
+msgstr "Overholde lovkrav"
 
 #: .\templates\pages\privacy.html:68
 msgid "Analyze and improve website performance"
-msgstr ""
+msgstr "Analysere og forbedre hjemmeside ydeevne"
 
 #: .\templates\pages\privacy.html:69
 msgid "Protect against fraud and unauthorized access"
-msgstr ""
+msgstr "Beskytte mod svindel og ulovlig adgang"
 
 #: .\templates\pages\privacy.html:76
 msgid ""
 "We retain your personal data for as long as necessary to fulfill the "
 "purposes for which we collected it, including:"
 msgstr ""
+"Vi opbevarer din personlige information, så længe det er nødvendigt for at opfylde de formål, for hvilke vi har samlet den, herunder:"
 
 #: .\templates\pages\privacy.html:78
 msgid "Contact form submissions: 2 years"
-msgstr ""
+msgstr "Kontaktformular-indsendelser: 2 år"
 
 #: .\templates\pages\privacy.html:79
 msgid "Newsletter subscriptions: Until unsubscribed"
-msgstr ""
+msgstr "Nyhedsbrev-abonnementer: Indtil du afmelder dig"
 
 #: .\templates\pages\privacy.html:80
 msgid "Service-related data: Duration of service plus 5 years"
-msgstr ""
+msgstr "Service-relateret data: Varigheden af service plus 5 år"
 
 #: .\templates\pages\privacy.html:81
 msgid "Usage analytics: 26 months"
-msgstr ""
+msgstr "Brugsanalyse: 26 måneder"
 
 #: .\templates\pages\privacy.html:88
 msgid ""
 "We implement appropriate technical and organizational measures to protect "
 "your personal data, including:"
 msgstr ""
+"Vi implementerer passende tekniske og organisatoriske foranstaltninger til at beskytte din personlige data, herunder:"
 
 #: .\templates\pages\privacy.html:90
 msgid "SSL/TLS encryption for all data transmission"
-msgstr ""
+msgstr "SSL/TLS-kryptering for alle dataoverførsler"
 
 #: .\templates\pages\privacy.html:91
 msgid "Secure data storage with regular backups"
-msgstr ""
+msgstr "Sikker dataopbevaring med regelmæssige sikkerhedskopier"
 
 #: .\templates\pages\privacy.html:92
 msgid "Access controls and authentication measures"
-msgstr ""
+msgstr "Adgangskontrolle og autentificeringstilstande"
 
 #: .\templates\pages\privacy.html:93
 msgid "Regular security assessments and updates"
-msgstr ""
+msgstr "Regelmæssige sikkerhedsevalueringer og opdateringer"
 
 #: .\templates\pages\privacy.html:100
 msgid "Under GDPR, you have the following rights:"
-msgstr ""
+msgstr "Under GDPR har du følgende rettigheder:"
 
 #: .\templates\pages\privacy.html:104
 msgid "Right to access your personal data"
-msgstr ""
+msgstr "Rettighed til at få adgang til din personlige data"
 
 #: .\templates\pages\privacy.html:105
 msgid "Right to rectification"
-msgstr ""
+msgstr "Rettighed til rettelse"
 
 #: .\templates\pages\privacy.html:106
 msgid "Right to erasure ('right to be forgotten')"
-msgstr ""
+msgstr "Rettighed til sletning ('rettighed til at blive glemt')"
 
 #: .\templates\pages\privacy.html:107
 msgid "Right to restrict processing"
-msgstr ""
+msgstr "Rettighed til at begrænse behandling"
 
 #: .\templates\pages\privacy.html:112
 msgid "Right to data portability"
-msgstr ""
+msgstr "Rettighed til dataoverførsel"
 
 #: .\templates\pages\privacy.html:113
 msgid "Right to object"
-msgstr ""
+msgstr "Rettighed til at afvise"
 
 #: .\templates\pages\privacy.html:114
 msgid "Right to withdraw consent"
-msgstr ""
+msgstr "Rettighed til at trække samtykke tilbage"
 
 #: .\templates\pages\privacy.html:115
 msgid "Right to lodge a complaint"
-msgstr ""
+msgstr "Rettighed til at indgive en klage"
 
 #: .\templates\pages\privacy.html:124
 msgid "Our website uses the following types of cookies:"
-msgstr ""
+msgstr "Vores hjemmeside bruger følgende typer af cookies:"
 
 #: .\templates\pages\privacy.html:129
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: .\templates\pages\privacy.html:130
 msgid "Purpose"
-msgstr ""
+msgstr "Formål"
 
 #: .\templates\pages\privacy.html:131
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
 msgid "Duration"
-msgstr ""
+msgstr "Varighed"
 
 #: .\templates\pages\privacy.html:136
 msgid "Essential"
-msgstr ""
+msgstr "Nødvendig"
 
 #: .\templates\pages\privacy.html:137
 msgid "Website functionality"
-msgstr ""
+msgstr "Hjemmesidefunktionalitet"
 
 #: .\templates\pages\privacy.html:138
 msgid "Session"
-msgstr ""
+msgstr "Session"
 
 #: .\templates\pages\privacy.html:141
 msgid "Analytics"
-msgstr ""
+msgstr "Analyse"
 
 #: .\templates\pages\privacy.html:142
 msgid "Performance monitoring"
-msgstr ""
+msgstr "Ydeevneovervågning"
 
 #: .\templates\pages\privacy.html:143
 msgid "months"
-msgstr ""
+msgstr "måneder"
 
 #: .\templates\pages\privacy.html:146
 msgid "Preferences"
-msgstr ""
+msgstr "Præferencer"
 
 #: .\templates\pages\privacy.html:147
 msgid "User settings"
-msgstr ""
+msgstr "Brugerindstillinger"
 
 #: .\templates\pages\privacy.html:148
 msgid "year"
-msgstr ""
+msgstr "år"
 
 #: .\templates\pages\privacy.html:158
 msgid "We use the following third-party services:"
-msgstr ""
+msgstr "Vi bruger følgende tredjeparts tjenester:"
 
 #: .\templates\pages\privacy.html:160
 msgid "Google Analytics for website analytics"
-msgstr ""
+msgstr "Google Analytics for hjemmesideanalyse"
 
 #: .\templates\pages\privacy.html:161
 msgid "MailChimp for newsletter management"
-msgstr ""
+msgstr "MailChimp for nyhedsbrev-styring"
 
 #: .\templates\pages\privacy.html:162
 msgid "Cloudflare for content delivery and security"
-msgstr ""
+msgstr "Cloudflare for indholdshastighed og sikkerhed"
 
 #: .\templates\pages\privacy.html:164
 msgid "Each service has its own privacy policy and data processing practices."
-msgstr ""
+msgstr "Hver tjeneste har sin egen personoplysningspolitik og databehandlingspraksis."
 
 #: .\templates\pages\privacy.html:170
 msgid ""
 "Your data may be transferred to and processed in countries outside the "
 "European Economic Area (EEA). We ensure appropriate safeguards through:"
-msgstr ""
+msgstr "Din data kan overføres og behandles i lande uden for Den Europæiske Økonomiske Rækkevækstområde (EØR). Vi sikrer passende foranstaltninger gennem:"
 
 #: .\templates\pages\privacy.html:172
 msgid "EU Standard Contractual Clauses"
-msgstr ""
+msgstr "EU's Standard Contractual Clauses"
 
 #: .\templates\pages\privacy.html:173
 msgid "Privacy Shield certification (where applicable)"
-msgstr ""
+msgstr "Privacy Shield-certificering (hvor relevant)"
 
 #: .\templates\pages\privacy.html:174
 msgid "Data Processing Agreements"
-msgstr ""
+msgstr "Data-behandlingsaftaler"
 
 #: .\templates\pages\privacy.html:181
 msgid ""
 "We may update this privacy policy from time to time. We will notify you of "
 "any material changes by:"
 msgstr ""
+"Vi kan opdatere denne personoplysningspolitik fra tid til anden. Vi vil informere dig om materialeændringer ved:"
 
 #: .\templates\pages\privacy.html:183
 msgid "Posting the new policy on this page"
-msgstr ""
+msgstr "Indsætte den nye politik på denne side"
 
 #: .\templates\pages\privacy.html:184
 msgid "Sending an email to registered users"
-msgstr ""
+msgstr "Sende en email til registrerede brugere"
 
 #: .\templates\pages\privacy.html:185
 msgid "Displaying a notice on our website"
-msgstr ""
+msgstr "Visning af en meddelelse på vores hjemmeside"
 
 #: .\templates\pages\privacy.html:192
 msgid ""
 "If you have any questions about this privacy policy, please contact our Data "
 "Protection Officer:"
 msgstr ""
+"Hvis du har spørgsmål til denne personoplysningspolitik, vær venlig at kontakte vores Data Protection Officer:"
 
 #: .\templates\pages\privacy.html:198
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: .\templates\pages\privacy.html:206
 msgid "Last updated"
-msgstr ""
+msgstr "Sidst opdateret"
 
 #: .\templates\services\service_detail.html:55
 msgid "Key Features"
-msgstr ""
+msgstr "Nøglefunktioner"
 
 #: .\templates\services\service_detail.html:74
 msgid "Interested in"
-msgstr ""
+msgstr "Interesseret i"
 
 #: .\templates\services\service_detail.html:75
 #: .\templates\services\service_list.html:50
 msgid "Contact us to discuss how we can help with your specific requirements."
-msgstr ""
-"Kontakt os for at diskutere, hvordan vi kan hjælpe med dine specifikke krav."
+msgstr "Kontakt os for at diskutere, hvordan vi kan hjælpe med dine specifikke krav."
+
 
 #: .\templates\services\service_detail.html:84
 #, fuzzy
