@@ -32,6 +32,7 @@ urlpatterns = [
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('images/favicon.ico'))),
     # Language selection
     path('i18n/', include('django.conf.urls.i18n')),
+    path('tinymce/', include('tinymce.urls')),
 ]
 
 # Translatable URLs

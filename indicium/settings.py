@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     # Third party apps
     'rest_framework',
     'corsheaders',
+    'tinymce',
     
     # Local apps
     'core.apps.CoreConfig',

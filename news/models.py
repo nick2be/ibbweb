@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from tinymce.models import HTMLField
 from django.contrib.auth import get_user_model
 from django.utils.translation import gettext_lazy as _
 
@@ -26,7 +27,7 @@ class Category(models.Model):
 class Article(models.Model):
     title = models.CharField(_('Title'), max_length=200)
     slug = models.SlugField(unique=True, blank=True)
-    content = models.TextField(_('Content'))
+    content = HTMLField(_('Content'))
     excerpt = models.TextField(_('Excerpt'), max_length=200, help_text=_('A short description that will appear in article previews'))
     image = models.ImageField(_('Image'), upload_to='news/images/', blank=True, null=True)
     categories = models.ManyToManyField(Category, related_name='articles', verbose_name=_('Categories'))
