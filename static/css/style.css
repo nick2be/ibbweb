@@ -45,7 +45,8 @@ a:hover {
 /* Navigation */
 .navbar {
     padding: 1rem 0;
-    background-color: #E0E7EA !important;
+    background-color: rgba(224, 231, 234, 0.9) !important;
+    backdrop-filter: blur(10px);
 }
 
 .navbar-brand img {
@@ -65,15 +66,34 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: var(--light-gray);
-    padding: 6rem 0;
-    margin-top: -2rem;
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: url('../images/hero-background.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: -76px; /* Adjust based on your navbar height */
+}
+
+
+
+.hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    color: var(--dark-gray);
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
 }
 
 /* Services Grid */
