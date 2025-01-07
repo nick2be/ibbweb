@@ -193,4 +193,57 @@ a:hover {
     position: relative;
     background: white;
     z-index: 2;
+}
+
+/* Header Styles */
+.header {
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header .navbar {
+    padding: 0.5rem 0;
+}
+
+.header.transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header.transparent.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header.transparent .nav-link {
+    color: #fff !important;
+}
+
+.header.transparent.scrolled .nav-link {
+    color: var(--dark-gray) !important;
+}
+
+.header.transparent .navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.header.transparent .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.header.transparent.scrolled .navbar-toggler {
+    border-color: rgba(0,0,0,0.1);
+}
+
+.header.transparent.scrolled .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.header.transparent .navbar-brand {
+    color: #fff;
+}
+
+.header.transparent.scrolled .navbar-brand {
+    color: #333;
 } 

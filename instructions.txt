@@ -73,3 +73,5 @@ on the main page i want the hero background to stay in place when scrolling down
 ---
 On the main page - I want the header to be transparent on the initial load, then when scroling i goes to not being transparent
 ---
+Also in the footer - i would like the logo just under the text "Driving Innovation and Security in IT for Over 9 Years"
+---
