@@ -9,16 +9,13 @@
 <section class="hero">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <h1 class="animate-on-scroll">{% trans "Driving Innovation and Security in IT for Over 9 Years" %}</h1>
                 <p class="lead mb-4 animate-on-scroll">{% trans "Professional IT development and security services for banking, insurance, logistics, and other critical sectors." %}</p>
                 <div class="d-flex gap-3 animate-on-scroll">
                     <a href="{% url 'services:list' %}" class="btn btn-primary btn-lg">{% trans "Our Services" %}</a>
                     <a href="{% url 'contact:contact' %}" class="btn btn-outline-primary btn-lg">{% trans "Contact Us" %}</a>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <img src="{% static 'images/hero-image.png' %}" alt="{% trans 'IT Services' %}" class="img-fluid rounded shadow-lg animate-on-scroll">
             </div>
         </div>
     </div>

@@ -63,3 +63,10 @@ pledase pick up whasts missing from the django.po.backup file  to complete the t
 ---
 update the summary.txt and instructions.txt
 ---
+---
+I want this image to be the background on the Hero section of the homepage - it should fill the whole page.
+---
+that folder exsists
+---
+update the instructions.txt and the summary.txt
+---
