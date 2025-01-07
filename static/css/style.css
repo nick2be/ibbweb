@@ -45,8 +45,19 @@ a:hover {
 /* Navigation */
 .navbar {
     padding: 1rem 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.navbar.transparent {
+    background-color: transparent !important;
+    backdrop-filter: none;
+}
+
+.navbar.scrolled {
     background-color: rgba(224, 231, 234, 0.9) !important;
     backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .navbar-brand img {
@@ -70,14 +81,24 @@ a:hover {
     min-height: 100vh;
     padding: 0;
     margin: 0;
-    background: url('../images/hero-background.webp') no-repeat center center;
+    background: url('../images/hero-background.webp') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;
     margin-top: -76px; /* Adjust based on your navbar height */
+    z-index: 1;
 }
 
-
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: -1;
+}
 
 .hero .container {
     position: relative;
@@ -165,4 +186,11 @@ a:hover {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Services Section */
+.py-5 {
+    position: relative;
+    background: white;
+    z-index: 2;
 } 

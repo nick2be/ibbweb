@@ -1,5 +1,24 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Navbar scroll handling
+    const navbar = document.querySelector('.navbar');
+    
+    // Set initial state
+    if (window.scrollY === 0) {
+        navbar.classList.add('transparent');
+    }
+    
+    // Handle scroll
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.remove('transparent');
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.add('transparent');
+            navbar.classList.remove('scrolled');
+        }
+    });
+
     // Initialize Bootstrap tooltips
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

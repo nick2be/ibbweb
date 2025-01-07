@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 
@@ -6,7 +7,7 @@ class Service(models.Model):
     name = models.CharField(_('Name'), max_length=200)
     slug = models.SlugField(unique=True, blank=True)
     short_description = models.TextField(_('Short Description'), max_length=200)
-    description = models.TextField(_('Description'))
+    description = HTMLField(_('Description'))
     icon = models.ImageField(_('Icon'), upload_to='services/icons/')
     image = models.ImageField(_('Image'), upload_to='services/images/', blank=True, null=True)
     order = models.IntegerField(_('Order'), default=0)
