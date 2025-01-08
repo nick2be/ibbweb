@@ -449,7 +449,7 @@ msgstr "Virksomhedsløsninger"
 
 #: .\templates\pages\about.html:93
 msgid "Our Leadership Team"
-msgstr ""
+msgstr "Vores Ledelse"
 
 #: .\templates\pages\about.html:97
 msgid "CEO"
@@ -502,29 +502,29 @@ msgstr ""
 #: .\templates\pages\home.html:42 .\templates\services\service_detail.html:96
 #: .\templates\services\service_list.html:37
 msgid "Learn More"
-msgstr ""
+msgstr "Læs Mere"
 
 #: .\templates\pages\home.html:53
 msgid "Industries We Serve"
-msgstr ""
+msgstr "Brancher vi Servicer"
 
 #: .\templates\pages\home.html:57 .\templates\pages\home.html:58
 msgid "Banking"
-msgstr ""
+msgstr "Bank"
 
 #: .\templates\pages\home.html:75 .\templates\pages\home.html:76
 msgid "Enterprise"
-msgstr ""
+msgstr "Enterprise"
 
 #: .\templates\pages\home.html:110
 msgid "Ready to Transform Your IT Infrastructure?"
-msgstr ""
+msgstr "Klar til at Transformere Din IT-Infrastruktur?"
 
 #: .\templates\pages\home.html:111
 msgid ""
 "Let's discuss how we can help your business thrive with our professional IT "
 "services."
-msgstr ""
+msgstr "Lad os diskutere, hvordan vi kan hjælpe din virksomhed med at vokse med vores professionelle IT-tjenester."
 
 #: .\templates\pages\privacy.html:14
 msgid ""
