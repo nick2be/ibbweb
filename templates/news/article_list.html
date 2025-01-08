@@ -25,7 +25,9 @@
             <div class="col-md-6 col-lg-4 animate-on-scroll">
                 <div class="article-card h-100">
                     {% if article.image %}
+                    <a href="{% url 'news:detail' article.slug %}"> 
                         <img src="{{ article.image.url }}" alt="{{ article.title }}" class="card-img-top">
+                    </a>
                     {% endif %}
                     <div class="card-body">
                         <h3>{{ article.title }}</h3>
