@@ -46,7 +46,7 @@ a:hover {
 .navbar {
     padding: 1rem 0;
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
 }
 
 .navbar.transparent {
@@ -81,7 +81,7 @@ a:hover {
     min-height: 100vh;
     padding: 0;
     margin: 0;
-    background: url('../images/hero-background.webp') no-repeat center center fixed;
+    background: url('../images/hero-background_7.webp') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -217,7 +217,7 @@ a:hover {
 }
 
 .header.transparent .nav-link {
-    color: #fff !important;
+    color: var(--dark-gray) !important;
 }
 
 .header.transparent.scrolled .nav-link {
