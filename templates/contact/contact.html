@@ -5,11 +5,22 @@
 {% block title %}{% trans "Contact Us" %} - {% trans "Indicium By Bounty ApS" %}{% endblock %}
 
 {% block content %}
+<!-- Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="mb-4">{% trans "Contact Us" %}</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h1 class="text-center mb-4">{% trans "Contact Us" %}</h1>
+            <div class="col-lg-8 mx-auto">                
                 <p class="lead text-center mb-5">{% trans "Have a question or want to discuss a project? We'd love to hear from you." %}</p>
                 
                 {% if messages %}

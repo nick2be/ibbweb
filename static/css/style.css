@@ -246,4 +246,33 @@ a:hover {
 
 .header.transparent.scrolled .navbar-brand {
     color: #333;
+}
+
+/* Standard Hero Section (non-homepage) */
+.py-5.bg-light {
+    background-color: var(--light-gray) !important;
+    padding: 5rem 0 !important;
+}
+
+.py-5.bg-light h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--dark-gray);
+}
+
+.py-5.bg-light .lead {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .py-5.bg-light {
+        padding: 4rem 0 !important;
+    }
+    
+    .py-5.bg-light h1 {
+        font-size: 2rem;
+    }
 } 
