@@ -36,3 +36,8 @@ Thumbs.db
 # Cursor
 # .cursorrules
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
