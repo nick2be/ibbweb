@@ -76,8 +76,6 @@ msgid "Thank you for subscribing to our newsletter!"
 msgstr "Tak for din tilmelding til vores nyhedsbrev!"
 
 #: .\contact\views.py:46
-#, fuzzy
-#| msgid "Enter your email address"
 msgid "Invalid email address."
 msgstr "Ikke gyldig E-mail addresse"
 
@@ -103,43 +101,43 @@ msgstr "Indhold"
 
 #: .\news\models.py:31
 msgid "Excerpt"
-msgstr ""
+msgstr "Uddrag"
 
 #: .\news\models.py:31
 msgid "A short description that will appear in article previews"
-msgstr ""
+msgstr "En kort beskrivelse der vil vises i artikel forhåndsvisninger"
 
 #: .\news\models.py:32 .\services\models.py:11
 msgid "Image"
-msgstr ""
+msgstr "Billede"
 
 #: .\news\models.py:34
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: .\news\models.py:35
 msgid "Published"
-msgstr ""
+msgstr "Udgivet"
 
 #: .\news\models.py:36
 msgid "Featured"
-msgstr ""
+msgstr "Fremhævet"
 
 #: .\news\models.py:42
 msgid "Article"
-msgstr ""
+msgstr "Artikel"
 
 #: .\news\models.py:43 .\news\models.py:57
 msgid "Articles"
-msgstr ""
+msgstr "Artikler"
 
 #: .\news\models.py:60
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: .\news\models.py:61
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: .\pages\views.py:20 .\templates\base.html:42 .\templates\base.html:115
 #: .\templates\pages\about.html:5
@@ -159,15 +157,15 @@ msgstr "Hjem"
 
 #: .\services\models.py:8
 msgid "Short Description"
-msgstr ""
+msgstr "Kort Beskrivelse"
 
 #: .\services\models.py:10 .\services\models.py:33
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 #: .\services\models.py:12 .\services\models.py:34
 msgid "Order"
-msgstr ""
+msgstr "Rækkefølge"
 
 #: .\services\models.py:18
 msgid "Service"
@@ -180,7 +178,7 @@ msgstr "Tjenester"
 
 #: .\services\models.py:33
 msgid "Font Awesome icon class"
-msgstr ""
+msgstr "Font Awesome ikon klasse"
 
 #: .\services\models.py:38
 msgid "Service Feature"
@@ -196,9 +194,29 @@ msgstr "Tjenestefunktioner"
 msgid "Our Services"
 msgstr "Vores Tjenester"
 
+#: .\templates\pages\home.html:16
+msgid "Industries We Serve"
+msgstr "Brancher Vi Betjener"   
+
+#: .\templates\pages\home.html:89
+msgid "Latest News"
+msgstr "Seneste Nyheder"
+
+#: .\templates\pages\home.html:100
+msgid "Ready to Transform Your IT Infrastructure?"
+msgstr "Klar til at Transformere Din IT-Infrastruktur?"
+
+#: .\templates\pages\home.html:101
+msgid "Let's discuss how we can help your business thrive with our professional IT services."
+msgstr "Lad os diskutere, hvordan vi kan hjælpe din virksomhed med at vokse med vores professionelle IT-tjenester."
+
+#: .\templates\pages\home.html:20
+msgid "Professional IT development and security services for banking, insurance, logistics, and other critical sectors."
+msgstr "Professionel IT-udvikling og sikkerhedstjenester til bank, forsikring, logistik og andre kritiske sektorer."
+
+
 #: .\templates\base.html:8
-msgid ""
-"Indicium By Bounty ApS - Professional IT Development & Security Services"
+msgid "Indicium By Bounty ApS - Professional IT Development & Security Services"
 msgstr "Indicium By Bounty ApS - Professionel IT-udvikling & Sikkerhedstjenester"
 
 #: .\templates\base.html:9 .\templates\base.html:106
@@ -208,11 +226,23 @@ msgstr "Indicium By Bounty ApS - Professionel IT-udvikling & Sikkerhedstjenester
 #: .\templates\pages\privacy.html:5 .\templates\services\service_detail.html:5
 #: .\templates\services\service_list.html:5
 msgid "Indicium By Bounty ApS"
-msgstr ""
+msgstr "Indicium By Bounty ApS"
+
+#: .\templates\news\article_list.html:10
+msgid "Browse by Category"
+msgstr "Gennemse efter Kategori"
+
+#: .\templates\news\article_list.html:63
+msgid "View Articles"
+msgstr "Se Artikler"
+
+#: .\templates\news\article_detail.html:88
+msgid "Subscribe to our newsletter to receive the latest news and insights directly in your inbox."
+msgstr "Tilmeld dig vores nyhedsbrev for at modtage de seneste nyheder og indsigter direkte i din indbakke."
 
 #: .\templates\base.html:25
 msgid "Indicium By Bounty ApS Logo"
-msgstr ""
+msgstr "Indicium By Bounty ApS Logo"
 
 #: .\templates\base.html:39 .\templates\base.html:114
 #: .\templates\news\article_detail.html:13
@@ -220,7 +250,6 @@ msgid "News"
 msgstr "Nyheder"
 
 #: .\templates\base.html:45 .\templates\base.html:116
-#| msgid "Contact Us"
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -230,7 +259,7 @@ msgstr "På forkant af Innovation og Sikkerhed i IT i Over 9 År"
 
 #: .\templates\base.html:110
 msgid "Quick Links"
-msgstr ""
+msgstr "Hurtige Links"
 
 #: .\templates\base.html:124 .\templates\contact\contact.html:51
 #: .\templates\contact\contact.html:86 .\templates\pages\privacy.html:197
@@ -239,41 +268,67 @@ msgstr "Telefon"
 
 #: .\templates\base.html:130
 msgid "Indicium By Bounty ApS. All rights reserved."
-msgstr ""
+msgstr "Indicium By Bounty ApS. Alle rettigheder forbeholdes."
 
 #: .\templates\contact\contact.html:13
-msgid ""
-"Have a question or want to discuss a project? We'd love to hear from you."
+msgid "Have a question or want to discuss a project? We'd love to hear from you."
 msgstr "Har du et spørgsmål eller vil du diskutere et projekt? Vi vil gerne høre fra dig."
 
 #: .\templates\contact\contact.html:64
 msgid "Send Message"
 msgstr "Send Besked"
 
-#: .\templates\contact\contact.html:93
-msgid "Location"
-msgstr "Lokation"
+#: .\templates\news\article_list.html:67
+msgid "View All Categories"
+msgstr "Se Alle Kategorier"
 
-#: .\templates\contact\contact.html:94 .\templates\pages\privacy.html:198
-msgid "Copenhagen, Denmark"
-msgstr "København, Danmark"
+#: .\templates\news\article_list.html:72
+msgid "Popular Tags"
+msgstr "Populære Tags"
 
-#: .\templates\contact\contact.html:104
-msgid "Subscribe to Our Newsletter"
-msgstr "Tilmeld Dig Vores Nyhedsbrev"
+#: .\templates\news\category_list.html:58
+msgid "No articles found in this category."
+msgstr "Ingen artikler fundet i denne kategori."
 
-#: .\templates\contact\contact.html:105 .\templates\news\article_list.html:14
+#: .\templates\news\category_list.html:84
+msgid "No categories found."
+msgstr "Ingen kategorier fundet."
+
+msgid "Follow the evidence to unlock the treasure hidden in your data."
+msgstr "Følg sporene for at låse op for skatten gemt i dine data."
+
+msgid "Where every sign points to a bounty of insights in your data."
+msgstr "Hvor hvert tegn peger på en rigdom af indsigt i dine data."
+
+msgid "Turn data clues into rewards—evidence-based solutions for real growth."
+msgstr "Forvandl data-spor til gevinster—evidensbaserede løsninger til reel vækst."
+
+msgid "Your data holds hidden riches—let every indication lead you to success."
+msgstr "Dine data rummer skjulte rigdomme—lad hver indikation føre dig til succes."
+
+msgid "Find the signs, claim the treasure: discover a wealth of value in your data."
+msgstr "Find tegnene, gør krav på skatten: opdag en rigdom af værdi i dine data."
+
+# Service Translations
+#: .\templates\services\service_list.html:14
+msgid "We offer a comprehensive range of IT development and security services tailored to meet your business needs."
+msgstr "Vi tilbyder en omfattende række IT-udviklings- og sikkerhedstjenester skræddersyet til at opfylde dine forretningsbehov."
+
+#: .\templates\services\service_list.html:49
+msgid "Need a Custom Solution?"
+msgstr "Har Du Brug for en Tilpasset Løsning?"
+
+#: .\templates\services\service_list.html:50
+msgid "Contact us to discuss how we can help with your specific requirements."
+msgstr "Kontakt os for at diskutere hvordan vi kan hjælpe med dine specifikke krav."
+
+#: .\templates\services\service_list.html:37
+msgid "Learn More"
+msgstr "Læs Mere"
+
+#: .\templates\news\article_list.html:14
 msgid "Stay updated with our latest news and insights."
 msgstr "Hold dig opdateret med vores seneste nyheder og indsigter."
-
-#: .\templates\contact\contact.html:112 .\templates\news\article_detail.html:95
-#: .\templates\news\category_list.html:49 .\templates\news\tag_list.html:48
-msgid "Subscribe"
-msgstr "Tilmeld Dig"
-
-#: .\templates\contact\contact.html:145
-msgid "An error occurred. Please try again later."
-msgstr "Der opstod en fejl. Prøv venligst igen senere."
 
 #: .\templates\news\article_detail.html:27
 msgid "By"
@@ -284,585 +339,167 @@ msgid "Related Articles"
 msgstr "Relaterede Artikler"
 
 #: .\templates\news\article_detail.html:74
-#: .\templates\news\article_list.html:42 .\templates\pages\home.html:98
+#: .\templates\news\article_list.html:44
 msgid "Read More"
 msgstr "Læs Mere"
 
-#: .\templates\news\article_detail.html:87
-#: .\templates\news\category_list.html:41 .\templates\news\tag_list.html:40
+#: .\templates\news\article_list.html:87
+#: .\templates\news\category_list.html:41
+#: .\templates\news\tag_list.html:40
 msgid "Stay Updated"
 msgstr "Hold Dig Opdateret"
 
-#: .\templates\news\article_detail.html:88
-#: .\templates\news\category_list.html:42 .\templates\news\tag_list.html:41
-msgid ""
-"Subscribe to our newsletter to receive the latest news and insights directly "
-"in your inbox."
-msgstr "Tilmeld dig vores nyhedsbrev for at modtage de seneste nyheder og indsigter direkte i din indbakke."
+#: .\templates\news\article_list.html:112
+#: .\templates\news\category_list.html:49
+#: .\templates\news\tag_list.html:48
+msgid "Subscribe"
+msgstr "Tilmeld"
 
-#: .\templates\news\article_list.html:5 .\templates\news\article_list.html:13
-#: .\templates\pages\home.html:86
-msgid "Latest News"
-msgstr "Seneste Nyheder"
+#: .\templates\services\service_detail.html:51
+msgid "Key Features"
+msgstr "Nøglefunktioner"
 
-#: .\templates\news\article_list.html:54
-msgid "Browse by Category"
-msgstr "Gennemse efter Kategori"
+#: .\templates\services\service_detail.html:71
+msgid "Other Services"
+msgstr "Andre Tjenester"
 
-#: .\templates\news\article_list.html:61 .\templates\news\category_list.html:30
-#: .\templates\news\tag_list.html:29
-msgid "View Articles"
-msgstr "Se Artikler"
+#: .\templates\services\service_detail.html:72
+msgid "Explore our other services that might interest you."
+msgstr "Udforsk vores andre tjenester, der kunne interessere dig."
 
-#: .\templates\news\article_list.html:72
-msgid "Popular Tags"
-msgstr "Populære Tags"
-
-#: .\templates\news\category_list.html:5 .\templates\news\category_list.html:13
-msgid "News Categories"
-msgstr "Nyhedskategorier"
-
-#: .\templates\news\category_list.html:14
-msgid ""
-"Browse our articles by category to find the information you're looking for."
-msgstr "Gennemse vores artikler efter kategori for at finde den information, du leder efter."
-
-#: .\templates\news\category_list.html:29 .\templates\news\tag_list.html:28
-msgid "articles"
-msgstr "artikler"
-
-#: .\templates\news\tag_list.html:5 .\templates\news\tag_list.html:13
-msgid "Article Tags"
-msgstr "Artikel Tags"
-
-#: .\templates\news\tag_list.html:14
-msgid "Browse our articles by tags to find specific topics."
-msgstr "Gennemse vores artikler efter tags for at finde specifikke emner."
-
+# About Page Translations
 #: .\templates\pages\about.html:13
 msgid "About Indicium By Bounty ApS"
 msgstr "Om Indicium By Bounty ApS"
 
 #: .\templates\pages\about.html:14
-#, python-format
-msgid ""
-"For over %(years)s years, we've been at the forefront of IT development and "
-"security, delivering innovative solutions to critical sectors."
-msgstr "I over %(years)s år har vi været i front inden for IT-udvikling og sikkerhed og leveret innovative løsninger til kritiske sektorer."
+msgid "For over 10 years, we've been at the forefront of IT development and security, delivering innovative solutions to critical sectors."
+msgstr "I over 10 år har vi været på forkant med IT-udvikling og sikkerhed, og leveret innovative løsninger til kritiske sektorer."
 
 #: .\templates\pages\about.html:15
-msgid ""
-"Our commitment to excellence and deep industry expertise has made us a "
-"trusted partner for organizations seeking reliable, secure, and efficient IT "
-"solutions."
+msgid "Our commitment to excellence and deep industry expertise has made us a trusted partner for organizations seeking reliable, secure, and efficient IT solutions."
 msgstr "Vores engagement i excellence og dybe brancheekspertise har gjort os til en betroet partner for organisationer, der søger pålidelige, sikre og effektive IT-løsninger."
 
-#: .\templates\pages\about.html:18
-msgid "Our Team"
-msgstr "Vores Team"
-
-#: .\templates\pages\about.html:31
+#: .\templates\pages\about.html:29
 msgid "Our Mission"
 msgstr "Vores Mission"
 
-#: .\templates\pages\about.html:32
-msgid ""
-"To deliver innovative IT solutions that drive business success while "
-"maintaining the highest standards of security and reliability."
+#: .\templates\pages\about.html:30
+msgid "To deliver innovative IT solutions that drive business success while maintaining the highest standards of security and reliability."
 msgstr "At levere innovative IT-løsninger, der driver forretningssucces, mens vi opretholder de højeste standarder for sikkerhed og pålidelighed."
 
-#: .\templates\pages\about.html:38
+#: .\templates\pages\about.html:36
 msgid "Our Vision"
 msgstr "Vores Vision"
 
-#: .\templates\pages\about.html:39
-msgid ""
-"To be the leading provider of secure and efficient IT solutions for critical "
-"business sectors across Europe."
+#: .\templates\pages\about.html:37
+msgid "To be the leading provider of secure and efficient IT solutions for critical business sectors across Europe."
 msgstr "At være den førende leverandør af sikre og effektive IT-løsninger til kritiske forretningssektorer i hele Europa."
 
-#: .\templates\pages\about.html:45
+#: .\templates\pages\about.html:43
 msgid "Our Values"
 msgstr "Vores Værdier"
 
-#: .\templates\pages\about.html:46
-msgid ""
-"Excellence, integrity, innovation, and commitment to our clients' success "
-"guide everything we do."
+#: .\templates\pages\about.html:44
+msgid "Excellence, integrity, innovation, and commitment to our clients' success guide everything we do."
 msgstr "Excellence, integritet, innovation og engagement i vores kunders succes guider alt, hvad vi gør."
 
-#: .\templates\pages\about.html:56
+#: .\templates\pages\about.html:54
 msgid "Our Expertise"
 msgstr "Vores Ekspertise"
 
-#: .\templates\pages\about.html:61
+#: .\templates\pages\about.html:59
 msgid "Technical Excellence"
 msgstr "Teknisk Excellence"
 
-#: .\templates\pages\about.html:62
-msgid ""
-"Our team of experts brings deep technical knowledge and years of experience "
-"in:"
+#: .\templates\pages\about.html:60
+msgid "Our team of experts brings deep technical knowledge and years of experience in:"
 msgstr "Vores team af eksperter bringer dyb teknisk viden og års erfaring inden for:"
 
-#: .\templates\pages\about.html:64
+#: .\templates\pages\about.html:62
 msgid "Jira Development & Administration"
 msgstr "Jira Udvikling & Administration"
 
-#: .\templates\pages\about.html:65
+#: .\templates\pages\about.html:63
 msgid "Full Stack Web Development"
 msgstr "Full Stack Webudvikling"
 
-#: .\templates\pages\about.html:66
+#: .\templates\pages\about.html:64
 msgid "Application Integration"
 msgstr "Applikationsintegration"
 
-#: .\templates\pages\about.html:67
+#: .\templates\pages\about.html:65
 msgid "Data Warehousing"
 msgstr "Data Warehousing"
 
-#: .\templates\pages\about.html:75
+#: .\templates\pages\about.html:73
 msgid "Industry Focus"
 msgstr "Branchefokus"
 
-#: .\templates\pages\about.html:76
+#: .\templates\pages\about.html:74
 msgid "We specialize in serving critical sectors including:"
 msgstr "Vi er specialiseret i at betjene kritiske sektorer, herunder:"
 
-#: .\templates\pages\about.html:78
+#: .\templates\pages\about.html:76
 msgid "Banking & Financial Services"
 msgstr "Bank & Finansielle Tjenester"
 
-#: .\templates\pages\about.html:79 .\templates\pages\home.html:63
-#: .\templates\pages\home.html:64
+#: .\templates\pages\about.html:77
 msgid "Insurance"
 msgstr "Forsikring"
 
-#: .\templates\pages\about.html:80 .\templates\pages\home.html:69
-#: .\templates\pages\home.html:70
+#: .\templates\pages\about.html:78
 msgid "Logistics"
 msgstr "Logistik"
 
-#: .\templates\pages\about.html:81
+#: .\templates\pages\about.html:79
 msgid "Enterprise Solutions"
 msgstr "Virksomhedsløsninger"
 
-#: .\templates\pages\about.html:93
+#: .\templates\pages\about.html:91
 msgid "Our Leadership Team"
-msgstr "Vores Ledelse"
+msgstr "Vores Ledelsesteam"
 
-#: .\templates\pages\about.html:97
+#: .\templates\pages\about.html:95
 msgid "CEO"
-msgstr ""
+msgstr "Administrerende Direktør"
 
-#: .\templates\pages\about.html:100
+#: .\templates\pages\about.html:98
 msgid "CEO & Founder"
-msgstr ""
+msgstr "Administrerende Direktør & Grundlægger"
 
-#: .\templates\pages\about.html:106 .\templates\pages\about.html:109
+#: .\templates\pages\about.html:104
 msgid "CTO"
-msgstr ""
+msgstr "Teknisk Direktør"
 
-#: .\templates\pages\about.html:115
+#: .\templates\pages\about.html:113
 msgid "CSO"
-msgstr ""
+msgstr "Sikkerhedsdirektør"
 
-#: .\templates\pages\about.html:118
+#: .\templates\pages\about.html:116
 msgid "Chief Security Officer"
-msgstr ""
+msgstr "Sikkerhedsdirektør"
 
-#: .\templates\pages\about.html:129
+#: .\templates\pages\about.html:127
 msgid "Ready to Work Together?"
 msgstr "Klar til at Arbejde Sammen?"
 
-#: .\templates\pages\about.html:130
+#: .\templates\pages\about.html:128
 msgid "Let's discuss how we can help your organization achieve its IT goals."
 msgstr "Lad os diskutere, hvordan vi kan hjælpe din organisation med at nå sine IT-mål."
 
-#: .\templates\pages\about.html:131 .\templates\pages\home.html:112
-#: .\templates\services\service_detail.html:76
-#: .\templates\services\service_list.html:51
+#: .\templates\pages\about.html:129
 msgid "Get in Touch"
 msgstr "Kontakt Os"
 
-#: .\templates\pages\home.html:5
-msgid "Indicium By Bounty ApS - IT Development & Security Services"
-msgstr ""
+#~ msgid "Data Visualization and Business Intelligence"
+#~ msgstr "Datavisualisering og Business Intelligence"
 
-#: .\templates\pages\home.html:14
-msgid ""
-"Professional IT development and security services for banking, insurance, "
-"logistics, and other critical sectors."
-msgstr "Professionel IT-udvikling og sikkerhedstjenester til bank, forsikring, logistik og andre kritiske sektorer."
+#~ msgid "IT Infrastructure Build and Development"
+#~ msgstr "IT-infrastruktur Opbygning og Udvikling"
 
-#: .\templates\pages\home.html:21
-msgid "IT Services"
-msgstr ""
+#~ msgid "End-to-end development solutions from frontend to backend."
+#~ msgstr "End-to-end udviklingsløsninger fra frontend til backend."
 
-#: .\templates\pages\home.html:42 .\templates\services\service_detail.html:96
-#: .\templates\services\service_list.html:37
-msgid "Learn More"
-msgstr "Læs Mere"
-
-#: .\templates\pages\home.html:53
-msgid "Industries We Serve"
-msgstr "Brancher vi Servicer"
-
-#: .\templates\pages\home.html:57 .\templates\pages\home.html:58
-msgid "Banking"
-msgstr "Bank"
-
-#: .\templates\pages\home.html:75 .\templates\pages\home.html:76
-msgid "Enterprise"
-msgstr "Enterprise"
-
-#: .\templates\pages\home.html:110
-msgid "Ready to Transform Your IT Infrastructure?"
-msgstr "Klar til at Transformere Din IT-Infrastruktur?"
-
-#: .\templates\pages\home.html:111
-msgid ""
-"Let's discuss how we can help your business thrive with our professional IT "
-"services."
-msgstr "Lad os diskutere, hvordan vi kan hjælpe din virksomhed med at vokse med vores professionelle IT-tjenester."
-
-#: .\templates\pages\privacy.html:14
-msgid ""
-"At Indicium By Bounty ApS, we take your privacy seriously. This policy "
-"outlines how we collect, use, and protect your personal information."
-msgstr ""
-"Ved Indicium By Bounty ApS, vi tager din privatlivserkendelse alvorligt. Denne politik "
-"beskriver, hvordan vi samler, bruger og beskytter din personlige information."     
-
-#: .\templates\pages\privacy.html:28
-msgid "Table of Contents"
-msgstr "Indholdsfortegnelse"
-
-#: .\templates\pages\privacy.html:30 .\templates\pages\privacy.html:46
-msgid "Information We Collect"
-msgstr "Information vi indsamler"
-
-#: .\templates\pages\privacy.html:31 .\templates\pages\privacy.html:60
-msgid "How We Use Your Information"
-msgstr "Hvordan vi bruger din information"
-
-#: .\templates\pages\privacy.html:32 .\templates\pages\privacy.html:75
-msgid "Data Retention"
-msgstr "Dataopbevaring"
-
-#: .\templates\pages\privacy.html:33 .\templates\pages\privacy.html:87
-msgid "Data Protection"
-msgstr "Data beskyttelse"
-
-#: .\templates\pages\privacy.html:34 .\templates\pages\privacy.html:99
-msgid "Your Rights"
-msgstr "Dine rettigheder"
-
-#: .\templates\pages\privacy.html:35 .\templates\pages\privacy.html:123
-msgid "Cookies"
-msgstr "Cookies"
-
-#: .\templates\pages\privacy.html:36 .\templates\pages\privacy.html:157
-msgid "Third-Party Services"
-msgstr "Tredjeparts tjenester"
-
-#: .\templates\pages\privacy.html:37 .\templates\pages\privacy.html:169
-msgid "International Data Transfers"
-msgstr "Internationale dataoverførsler"
-
-#: .\templates\pages\privacy.html:38 .\templates\pages\privacy.html:180
-msgid "Changes to This Policy"
-msgstr "Ændringer i denne politik"
-
-#: .\templates\pages\privacy.html:47
-msgid "We collect information that you provide directly to us, including:"
-msgstr "Vi indsamler information, som du giver direkte til os, herunder:"
-
-#: .\templates\pages\privacy.html:49
-msgid "Name and contact information"
-msgstr "Navn og kontaktinformation"
-
-#: .\templates\pages\privacy.html:50
-#, fuzzy
-#| msgid "Company"
-msgid "Company details"
-msgstr "Virksomhedsdetaljer"
-
-#: .\templates\pages\privacy.html:51
-msgid "Email correspondence"
-msgstr "E-mail korrespondance"
-
-#: .\templates\pages\privacy.html:52
-msgid "Information provided through our contact forms"
-msgstr "Information, som du giver gennem vores kontaktformularer"
-
-#: .\templates\pages\privacy.html:53
-msgid "Technical information such as IP address and browser type"
-msgstr "Teknisk information, såsom IP-adresse og browser-type"
-
-#: .\templates\pages\privacy.html:54
-msgid "Usage data and analytics"
-msgstr "Brugsdata og analyser"
-
-#: .\templates\pages\privacy.html:61
-msgid "We use the information we collect to:"
-msgstr "Vi bruger den information, vi indsamler til følgende formål:"
-
-#: .\templates\pages\privacy.html:63
-msgid "Respond to your inquiries"
-msgstr "Besvare dine spørgsmål"
-
-#: .\templates\pages\privacy.html:64
-msgid "Provide our services"
-msgstr "Tilbyde vores tjenester"
-
-#: .\templates\pages\privacy.html:65
-msgid "Send newsletters and updates (with your consent)"
-msgstr "Sende nyhedsbreve og opdateringer (med din samtykke)"
-
-#: .\templates\pages\privacy.html:66
-msgid "Improve our website and services"
-msgstr "Forbedre vores hjemmeside og tjenester"
-
-#: .\templates\pages\privacy.html:67
-msgid "Comply with legal obligations"
-msgstr "Overhold lovkrav"
-
-#: .\templates\pages\privacy.html:68
-msgid "Analyze and improve website performance"
-msgstr "Analysere og forbedre hjemmeside ydeevne"
-
-#: .\templates\pages\privacy.html:69
-msgid "Protect against fraud and unauthorized access"
-msgstr "Beskytte mod svindel og ulovlig adgang"
-
-#: .\templates\pages\privacy.html:76
-msgid ""
-"We retain your personal data for as long as necessary to fulfill the "
-"purposes for which we collected it, including:"
-msgstr "Vi opbevarer din personlige information, sålænge det er nødvendigt for at opfylde de formål, for hvilke vi har indsamlet den, herunder:"
-
-#: .\templates\pages\privacy.html:78
-msgid "Contact form submissions: 2 years"
-msgstr "Kontaktformularer: 2 år"
-
-#: .\templates\pages\privacy.html:79
-msgid "Newsletter subscriptions: Until unsubscribed"
-msgstr "Nyhedsbrev: Indtil du afmelder dig"
-
-#: .\templates\pages\privacy.html:80
-msgid "Service-related data: Duration of service plus 5 years"
-msgstr "Service-relateret data: Varigheden af service plus 5 år"
-
-#: .\templates\pages\privacy.html:81
-msgid "Usage analytics: 26 months"
-msgstr "Brugsanalyse: 26 måneder"
-
-#: .\templates\pages\privacy.html:88
-msgid ""
-"We implement appropriate technical and organizational measures to protect "
-"your personal data, including:"
-msgstr "Vi implementerer passende tekniske og organisatoriske foranstaltninger til at beskytte din personlige information, herunder:"
-
-#: .\templates\pages\privacy.html:90
-msgid "SSL/TLS encryption for all data transmission"
-msgstr "SSL/TLS-kryptering for alle dataoverførsler"
-
-#: .\templates\pages\privacy.html:91
-msgid "Secure data storage with regular backups"
-msgstr "Sikker dataopbevaring med regelmæssige sikkerhetskopier"
-
-#: .\templates\pages\privacy.html:92
-msgid "Access controls and authentication measures"
-msgstr "Adgangskontrol og autentificeringstilstande"
-
-#: .\templates\pages\privacy.html:93
-msgid "Regular security assessments and updates"
-msgstr "Regelmæssige sikkerhedsevalueringer og opdateringer"
-
-#: .\templates\pages\privacy.html:100
-msgid "Under GDPR, you have the following rights:"
-msgstr "Under GDPR har du følgende rettigheder:"
-
-#: .\templates\pages\privacy.html:104
-msgid "Right to access your personal data"
-msgstr "Rettighed til at få adgang til din personlige information"
-
-#: .\templates\pages\privacy.html:105
-msgid "Right to rectification"
-msgstr "Rettighed til rettelse"
-
-#: .\templates\pages\privacy.html:106
-msgid "Right to erasure ('right to be forgotten')"
-msgstr "Rettighed til sletning ('rettighed til at blive glemt')"
-
-#: .\templates\pages\privacy.html:107
-msgid "Right to restrict processing"
-msgstr "Rettighed til at begrænse behandling"
-
-#: .\templates\pages\privacy.html:112
-msgid "Right to data portability"
-msgstr "Rettighed til dataportabilitet"
-
-#: .\templates\pages\privacy.html:113
-msgid "Right to object"
-msgstr "Rettighed til at afvise"
-
-#: .\templates\pages\privacy.html:114
-msgid "Right to withdraw consent"
-msgstr "Rettighed til at trække samtykke tilbage"
-
-#: .\templates\pages\privacy.html:115
-msgid "Right to lodge a complaint"
-msgstr "Rettighed til at indgive en klage"
-
-#: .\templates\pages\privacy.html:124
-msgid "Our website uses the following types of cookies:"
-msgstr "Vores hjemmeside bruger følgende typer af cookies:"
-
-#: .\templates\pages\privacy.html:129
-msgid "Type"
-msgstr "Type"
-
-#: .\templates\pages\privacy.html:130
-msgid "Purpose"
-msgstr "Formål"
-
-#: .\templates\pages\privacy.html:131
-#, fuzzy
-#| msgid "Location"
-msgid "Duration"
-msgstr "Varighed"
-
-#: .\templates\pages\privacy.html:136
-msgid "Essential"
-msgstr "Nødvendig"
-
-#: .\templates\pages\privacy.html:137
-msgid "Website functionality"
-msgstr "Hjemmesidefunktionalitet"
-
-#: .\templates\pages\privacy.html:138
-msgid "Session"
-msgstr "Session"
-
-#: .\templates\pages\privacy.html:141
-msgid "Analytics"
-msgstr "Analyse"
-
-#: .\templates\pages\privacy.html:142
-msgid "Performance monitoring"
-msgstr "Ydeevneovervågning"
-
-#: .\templates\pages\privacy.html:143
-msgid "months"
-msgstr "måneder"
-
-#: .\templates\pages\privacy.html:146
-msgid "Preferences"
-msgstr "Præferencer"
-
-#: .\templates\pages\privacy.html:147
-msgid "User settings"
-msgstr "Brugerindstillinger"
-
-#: .\templates\pages\privacy.html:148
-msgid "year"
-msgstr "år"
-
-#: .\templates\pages\privacy.html:158
-msgid "We use the following third-party services:"
-msgstr "Vi bruger følgende tredjeparts tjenester:"
-
-#: .\templates\pages\privacy.html:160
-msgid "Google Analytics for website analytics"
-msgstr "Google Analytics for hjemmesideanalyse"
-
-#: .\templates\pages\privacy.html:161
-msgid "MailChimp for newsletter management"
-msgstr "MailChimp for nyhedsbrevshandtering"
-
-#: .\templates\pages\privacy.html:162
-msgid "Cloudflare for content delivery and security"
-msgstr "Cloudflare for indholdshastighed og sikkerhed"
-
-#: .\templates\pages\privacy.html:164
-msgid "Each service has its own privacy policy and data processing practices."
-msgstr "Hver tjeneste har sin egen privatlivspolitik og datahåndteringspraksis."
-
-#: .\templates\pages\privacy.html:170
-msgid ""
-"Your data may be transferred to and processed in countries outside the "
-"European Economic Area (EEA). We ensure appropriate safeguards through:"
-msgstr "Din data kan overføres og behandles i lande uden for Den Europæiske Økonomiske Rækkevækstområde (EØR). Vi sikrer tilstrækkelige foranstaltninger gennem:"
-
-#: .\templates\pages\privacy.html:172
-msgid "EU Standard Contractual Clauses"
-msgstr "EU's standard aftalte foranstaltninger"
-
-#: .\templates\pages\privacy.html:173
-msgid "Privacy Shield certification (where applicable)"
-msgstr "Privacy Shield-certificering (hvor tilfældigt)"
-
-#: .\templates\pages\privacy.html:174
-msgid "Data Processing Agreements"
-msgstr "Datahåndtering aftaler"
-
-#: .\templates\pages\privacy.html:181
-msgid ""
-"We may update this privacy policy from time to time. We will notify you of "
-"any material changes by:"
-msgstr "Vi kan opdatere denne privatlivspolitik fra tid til anden. Vi vil informere dig om eventuelle materialeændringer ved:"
-
-#: .\templates\pages\privacy.html:183
-msgid "Posting the new policy on this page"
-msgstr "At poste den nye politik på denne side"
-
-#: .\templates\pages\privacy.html:184
-msgid "Sending an email to registered users"
-msgstr "At sende en e-mail til registrerede brugere"
-
-#: .\templates\pages\privacy.html:185
-msgid "Displaying a notice on our website"
-msgstr "At vise en meddelelse på vores hjemmeside"
-
-#: .\templates\pages\privacy.html:192
-msgid ""
-"If you have any questions about this privacy policy, please contact our Data "
-"Protection Officer:"
-msgstr "Hvis du har spørgsmål til denne privatlivspolitik, vær venlig at kontakte vores Data Protection Officer:"
-
-#: .\templates\pages\privacy.html:198
-msgid "Address"
-msgstr "Adresse"
-
-#: .\templates\pages\privacy.html:206
-msgid "Last updated"
-msgstr "Sidst opdateret"
-
-#: .\templates\services\service_detail.html:55
-msgid "Key Features"
-msgstr "Nøglefunktioner"
-
-#: .\templates\services\service_detail.html:74
-msgid "Interested in"
-msgstr "Interesseret i"
-
-#: .\templates\services\service_detail.html:75
-#: .\templates\services\service_list.html:50
-msgid "Contact us to discuss how we can help with your specific requirements."
-msgstr "Kontakt os for at diskutere, hvordan vi kan hjælpe med dine specifikke krav."
-
-#: .\templates\services\service_detail.html:84
-msgid "Related Services"
-msgstr "Relaterede tjenester"
-
-#: .\templates\services\service_list.html:14
-msgid ""
-"We offer a comprehensive range of IT development and security services "
-"tailored to meet your business needs."
-msgstr "Vi tilbyder en komplet række IT-udviklings- og sikkerhedstjenester, der er tilpasset til dine forretningsbehov."
-
-#: .\templates\services\service_list.html:49
-msgid "Need a Custom Solution?"
-msgstr "Har du brug for en speciel løsning? Kontakt os for at få hjælp."
+#~ msgid "Seamless integration of applications and systems."
+#~ msgstr "Sømløs integration af applikationer og systemer." 

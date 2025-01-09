@@ -23,7 +23,8 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="{% url 'pages:home' %}">
-                    <img src="{% static 'images/logo.png' %}" alt="{% trans 'Indicium By Bounty ApS Logo' %}" height="60">
+                    <img src="{% static 'images/logo_rotate.png' %}" alt="{% trans 'Indicium By Bounty ApS Logo' %}" height="60" class="rotating">
+                    <img src="{% static 'images/logo_2.png' %}" alt="{% trans 'Indicium By Bounty ApS Logo' %}" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
                     <span class="navbar-toggler-icon"></span>
@@ -56,24 +57,12 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <form action="{% url 'set_language' %}" method="post" class="language-form">
-                                        {% csrf_token %}
-                                        <input type="hidden" name="next" value="{{ request.path }}">
-                                        <input type="hidden" name="language" value="en">
-                                        <button type="submit" class="dropdown-item {% if CURRENT_LANGUAGE == 'en' %}active{% endif %}">
-                                            English
-                                        </button>
-                                    </form>
-                                </li>
-                                <li>
-                                    <form action="{% url 'set_language' %}" method="post" class="language-form">
-                                        {% csrf_token %}
-                                        <input type="hidden" name="next" value="{{ request.path }}">
-                                        <input type="hidden" name="language" value="da">
-                                        <button type="submit" class="dropdown-item {% if CURRENT_LANGUAGE == 'da' %}active{% endif %}">
-                                            Dansk
-                                        </button>
-                                    </form>
+                                    <a href="/en" class="dropdown-item {% if CURRENT_LANGUAGE == 'en' %}active{% endif %}">
+                                        English
+                                    </a>
+                                    <a href="/da" class="dropdown-item {% if CURRENT_LANGUAGE == 'da' %}active{% endif %}">
+                                        Dansk
+                                    </a>
                                 </li>
                             </ul>
                         </li>

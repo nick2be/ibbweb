@@ -20,10 +20,11 @@
    - Transparent-to-solid header transition
    - Fixed hero background with overlay effects
    - Consistent branding throughout
+   - Rotating logo animation in header
 
 3. Technical Implementation
    - Django 4.2.7 framework
-   - PostgreSQL database support
+   - MariaDB database integration
    - Translation system using django-modeltranslation
    - Whitenoise for static files
    - Custom management commands for translations
@@ -36,9 +37,9 @@
    - Contact form with newsletter integration
 
 5. Recent Enhancements
-   - Fixed background hero section with parallax effect
-   - Transparent header on homepage with scroll transition
-   - Updated footer with logo placement
+   - Successfully migrated to MariaDB database
+   - Added rotating logo animation to header
+   - Enhanced visual branding with dual logo display
    - Improved navigation experience
    - Enhanced mobile responsiveness
 
@@ -64,16 +65,15 @@
    - Deployment preparation
 
 ## Recent Updates
-- Enhanced visual effects:
-  * Fixed hero background with parallax scrolling
-  * Transparent-to-solid header transition
-  * Improved mobile menu visibility
-  * Updated footer layout with logo
-- Translation improvements:
-  * Consolidated translation files
-  * Fixed translation issues in forms
-  * Updated Danish content across all pages
-- Technical optimizations:
-  * Improved translation management
-  * Enhanced responsive design
-  * Updated security configurations
+- Database Migration:
+  * Successfully connected to MariaDB
+  * Verified database connection and migrations
+  * Preserved existing data structure
+- Visual Enhancements:
+  * Added rotating logo animation
+  * Implemented dual logo display in header
+  * Improved header transparency effects
+- Technical Improvements:
+  * Updated database configuration
+  * Enhanced security settings
+  * Optimized static file serving

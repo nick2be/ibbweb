@@ -95,4 +95,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Initial check for elements in view
+
+    // Rotating headlines
+    const rotateHeadlines = () => {
+        const headlines = document.querySelectorAll('.rotating-headlines .headline');
+        if (headlines.length === 0) return;
+
+        let currentIndex = 0;
+        headlines.forEach((headline, index) => {
+            if (headline.classList.contains('active')) {
+                currentIndex = index;
+            }
+        });
+
+        headlines[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % headlines.length;
+        headlines[currentIndex].classList.add('active');
+    };
+
+    // Start headline rotation if headlines exist
+    const headlinesContainer = document.querySelector('.rotating-headlines');
+    if (headlinesContainer) {
+        setInterval(rotateHeadlines, 5000); // Rotate every 5 seconds
+    }
+
+    // Initial check for elements in view
+    animateOnScroll();
 }); 

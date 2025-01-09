@@ -6,12 +6,17 @@ from .models import Article, Category, Tag
 def article_list(request):
     current_language = get_language()
     articles = Article.objects.filter(published=True).order_by('-created_at')
+    categories = Category.objects.all().order_by(f'name_{current_language}')
+    tags = Tag.objects.all().order_by(f'name_{current_language}')
+    
     paginator = Paginator(articles, 6)
     page = request.GET.get('page')
     articles = paginator.get_page(page)
     
     context = {
         'articles': articles,
+        'categories': categories,
+        'tags': tags,
         'title': 'News & Updates'
     }
     return render(request, 'news/article_list.html', context)
@@ -35,7 +40,16 @@ def article_detail(request, slug):
     }
     return render(request, 'news/article_detail.html', context)
 
-def category_list(request, slug):
+def category_list(request):
+    current_language = get_language()
+    categories = Category.objects.all().order_by(f'name_{current_language}')
+    context = {
+        'categories': categories,
+        'title': _('News Categories')
+    }
+    return render(request, 'news/category_list.html', context)
+
+def category_detail(request, slug):
     current_language = get_language()
     category = get_object_or_404(Category, slug=slug)
     articles = Article.objects.filter(categories=category, published=True).order_by('-created_at')
