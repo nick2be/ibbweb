@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from django.utils.translation import gettext as _
+from django.conf import settings
 from .models import Contact, Newsletter
 from .forms import ContactForm, NewsletterForm
 
@@ -11,15 +12,23 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            contact = form.save()
-            messages.success(request, _('Thank you for your message. We will get back to you soon.'))
-            return redirect('contact:contact')
+            try:
+                contact = form.save()
+                messages.success(request, _('Thank you for your message. We will get back to you soon.'))
+                return redirect('contact:contact')
+            except Exception as e:
+                messages.error(request, _('An error occurred while sending your message. Please try again.'))
+        else:
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(request, f"{field}: {error}")
     else:
         form = ContactForm()
     
     context = {
         'form': form,
-        'title': _('Contact Us')
+        'title': _('Contact Us'),
+        'recaptcha_public_key': settings.RECAPTCHA_PUBLIC_KEY,
     }
     return render(request, 'contact/contact.html', context)
 

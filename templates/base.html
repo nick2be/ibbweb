@@ -57,10 +57,10 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <a href="/en" class="dropdown-item {% if CURRENT_LANGUAGE == 'en' %}active{% endif %}">
+                                    <a href="javascript:void(0);" onclick="changeLanguage('en')" class="dropdown-item {% if CURRENT_LANGUAGE == 'en' %}active{% endif %}">
                                         English
                                     </a>
-                                    <a href="/da" class="dropdown-item {% if CURRENT_LANGUAGE == 'da' %}active{% endif %}">
+                                    <a href="javascript:void(0);" onclick="changeLanguage('da')" class="dropdown-item {% if CURRENT_LANGUAGE == 'da' %}active{% endif %}">
                                         Dansk
                                     </a>
                                 </li>
@@ -96,7 +96,7 @@
                 <div class="col-md-4">
                     <!-- <h5>{% trans "Indicium By Bounty ApS" %}</h5> -->
                     <img src="{% static 'images/logo.png' %}" alt="{% trans 'Indicium By Bounty ApS Logo' %}" height="100" class="mb-3">
-                    <p>{% trans "Driving Innovation and Security in IT for Over 9 Years" %}</p>
+                    <p>{% trans "Driving Innovation and Security in IT" %}</p>
                 </div>
                 <div class="col-md-4">
                     <h5>{% trans "Quick Links" %}</h5>
@@ -128,36 +128,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'js/main.js' %}"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const languageForms = document.querySelectorAll('.language-form');
-            languageForms.forEach(form => {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const formData = new FormData(form);
-                    const nextUrl = formData.get('next');
-                    fetch('{% url "set_language" %}', {
-                        method: 'POST',
-                        body: formData,
-                        headers: {
-                            'X-CSRFToken': formData.get('csrfmiddlewaretoken')
-                        },
-                        credentials: 'same-origin'
-                    }).then(response => {
-                        if (response.ok) {
-                            const language = formData.get('language');
-                            // Remove any existing language prefix
-                            let path = nextUrl.replace(/^\/(en|da)/, '');
-                            // If the path is empty, set it to /
-                            if (!path) {
-                                path = '/';
-                            }
-                            // Add the new language prefix and redirect
-                            window.location.href = `/${language}${path}`;
-                        }
-                    });
-                });
-            });
-        });
+        function changeLanguage(language) {
+            // Get current path
+            let path = window.location.pathname;
+            // Remove current language prefix if it exists
+            path = path.replace(/^\/[a-z]{2}\//, '/');
+            // Add new language prefix
+            window.location.href = '/' + language + path;
+        }
     </script>
     {% block extra_js %}{% endblock %}
 </body>

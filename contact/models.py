@@ -1,11 +1,13 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 class Contact(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
-    company = models.CharField(max_length=100, blank=True)
-    subject = models.CharField(max_length=200)
-    message = models.TextField()
+    name = models.CharField(_('Name'), max_length=100)
+    email = models.EmailField(_('Email'))
+    company = models.CharField(_('Company'), max_length=100, blank=True)
+    subject = models.CharField(_('Subject'), max_length=200)
+    message = models.TextField(_('Message'))
+    recaptcha_token = models.CharField(max_length=5000, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)
     responded = models.BooleanField(default=False)

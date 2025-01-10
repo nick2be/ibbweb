@@ -254,8 +254,8 @@ msgid "Contact"
 msgstr "Kontakt"
 
 #: .\templates\base.html:107 .\templates\pages\home.html:13
-msgid "Driving Innovation and Security in IT for Over 9 Years"
-msgstr "På forkant af Innovation og Sikkerhed i IT i Over 9 År"
+msgid "Driving Innovation and Security in IT"
+msgstr "På forkant af Innovation og Sikkerhed i IT"
 
 #: .\templates\base.html:110
 msgid "Quick Links"
@@ -457,12 +457,12 @@ msgid "Enterprise Solutions"
 msgstr "Virksomhedsløsninger"
 
 #: .\templates\pages\about.html:91
-msgid "Our Leadership Team"
-msgstr "Vores Ledelsesteam"
+msgid "Leadership"
+msgstr "Ledelse"
 
 #: .\templates\pages\about.html:95
 msgid "CEO"
-msgstr "Administrerende Direktør"
+msgstr "CEO"
 
 #: .\templates\pages\about.html:98
 msgid "CEO & Founder"
