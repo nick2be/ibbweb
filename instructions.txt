@@ -79,3 +79,33 @@ Successfully connected to MariaDB database and verified the connection is workin
 ---
 Added rotating logo animation to the header with a secondary logo image.
 ---
+Add a cookie acceptance mechanism compliant with GDPR, specifically a pop-up that appears on the first load if cookies are not present.
+---
+Make the cookie banner a small pop-up instead of a full-width banner at the bottom.
+---
+On the services_details.html page, make the Service Header and the Breadcrumb have the same background color as the Hero Section on the Service list page.
+---
+Make the Service header background light-gray.
+---
+Center the h1 in the service header section and align the short description with it.
+---
+Center the service icon under the short description in the service header section.
+---
+Create a sitemap.xml and make it accessible via URL.
+---
+Update the sitemap configuration to handle language prefixes correctly.
+---
+Inquire about the presence of setting.py and urls.py in the /newibb directory, noting that the site settings should be in /indicium/settings.py.
+---
+Inquire about the purpose of the newibb directory and if it is being used for anything.
+---
+Restore the django.po file to its state before the addition of the privacy policy translations.
+---
+Add the privacy policy to the django.po file without deleting existing translations.
+---
+Fix NameError indicating that the name '_' is not defined in the category_list view.
+---
+Fix NameError indicating that get_language is not defined in the news views.
+---
+Stop for today and update the instructions and summary.
+---

@@ -3,7 +3,7 @@ from django.utils.translation import gettext as _
 from .models import Service, ServiceFeature
 
 def service_list(request):
-    services = Service.objects.all().order_by('order', 'name')
+    services = Service.objects.filter(active=True).order_by('order', 'name')
     context = {
         'services': services,
         'title': _('Our Services')
@@ -12,10 +12,10 @@ def service_list(request):
 
 def service_detail(request, slug):
     service = get_object_or_404(
-        Service.objects.prefetch_related('features'),
+        Service.objects.filter(active=True).prefetch_related('features'),
         slug=slug
     )
-    related_services = Service.objects.exclude(id=service.id).order_by('name')[:3]
+    related_services = Service.objects.filter(active=True).exclude(id=service.id).order_by('name')[:3]
     context = {
         'service': service,
         'related_services': related_services,

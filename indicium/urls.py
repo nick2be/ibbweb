@@ -23,6 +23,14 @@ from django.views.generic.base import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
+from django.contrib.sitemaps.views import sitemap
+from core.sitemaps import StaticViewSitemap, ServiceSitemap, ArticleSitemap
+
+sitemaps = {
+    'static': StaticViewSitemap,
+    'services': ServiceSitemap,
+    'articles': ArticleSitemap,
+}
 
 # Non-translatable URLs
 urlpatterns = [
@@ -33,6 +41,8 @@ urlpatterns = [
     # Language selection
     path('i18n/', include('django.conf.urls.i18n')),
     path('tinymce/', include('tinymce.urls')),
+    # Serve sitemap.xml
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
 
 # Translatable URLs

@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
-from django.utils.translation import get_language
+from django.utils.translation import gettext as _, get_language
 from .models import Article, Category, Tag
 
 def article_list(request):

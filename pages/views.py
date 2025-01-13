@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 def home(request):
     current_language = get_language()
-    services = Service.objects.all().order_by('order', f'name_{current_language}')[:6]
+    services = Service.objects.filter(active=True).order_by('order', f'name_{current_language}')[:6]
     latest_news = Article.objects.filter(published=True).order_by('-created_at')[:2]
     context = {
         'services': services,

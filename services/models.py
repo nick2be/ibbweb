@@ -11,6 +11,7 @@ class Service(models.Model):
     icon = models.ImageField(_('Icon'), upload_to='services/icons/')
     image = models.ImageField(_('Image'), upload_to='services/images/', blank=True, null=True)
     order = models.IntegerField(_('Order'), default=0)
+    active = models.BooleanField(_('Active'), default=True, help_text=_('Enable or disable this service'))
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

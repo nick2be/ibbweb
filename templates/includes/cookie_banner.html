@@ -1,0 +1,14 @@
+{% load i18n %}
+
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>
+            {% trans "We use cookies to enhance your experience on our website. By continuing to use this site, you agree to our use of cookies. We only use essential cookies for the website to function properly." %}
+        </p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn btn-primary">{% trans "Accept" %}</button>
+            <button id="decline-cookies" class="btn btn-outline-light">{% trans "Decline" %}</button>
+            <a href="{% url 'pages:privacy' %}" class="btn btn-link">{% trans "Learn More" %}</a>
+        </div>
+    </div>
+</div> 

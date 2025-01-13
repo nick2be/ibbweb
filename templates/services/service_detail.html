@@ -6,7 +6,7 @@
 
 {% block content %}
 <!-- Breadcrumb -->
-<nav aria-label="breadcrumb" class="bg-light py-3">
+<nav aria-label="breadcrumb" class="pt-3">
     <div class="container">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">{% trans "Home" %}</a></li>
@@ -17,26 +17,26 @@
 </nav>
 
 <!-- Service Header -->
-<section class="py-5">
+<section class="py-5" style="background-color: var(--light-gray);">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
                 <h1 class="mb-4">{{ service.name }}</h1>
                 <p class="lead mb-4">{{ service.short_description }}</p>
-            </div>
-            <div class="col-lg-4 text-center">
-                {% if service.icon %}
-                    <img src="{{ service.icon.url }}" alt="{{ service.name }}" class="img-fluid mb-3" width="120">
-                {% else %}
-                    <i class="fas fa-cogs fa-5x mb-3"></i>
-                {% endif %}
+                <div class="text-center mt-4">
+                    {% if service.icon %}
+                        <img src="{{ service.icon.url }}" alt="{{ service.name }}" class="img-fluid" width="120">
+                    {% else %}
+                        <i class="fas fa-cogs fa-5x"></i>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Service Description -->
-<section class="py-5 bg-light">
+<section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
