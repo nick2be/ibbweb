@@ -460,3 +460,18 @@ msgstr "Vis alle Kategorier"
 
 msgid "Popular Tags"
 msgstr "Populære Tags"
+
+msgid "Subscribe to our newsletter to receive the latest news and insights directly in your inbox."
+msgstr "Tilmeld dig vores nyhedsbrev for at modtage de seneste nyheder og indsigter direkte i din indbakke."
+
+msgid "Enter your email address"
+msgstr "Indtast din e-mail adresse"
+
+msgid "Interested in"
+msgstr "Interesseret i"
+
+msgid "Related Services"
+msgstr "Relaterede Tjenester"
+
+msgid "Related Articles"
+msgstr "Relaterede Artikler"
